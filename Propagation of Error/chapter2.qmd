@@ -1,0 +1,5 @@
+# The use of the correct number of significant figures in calculations. {#sec-chapter2}
+
+In @sec-chapter1 we have learnt about significant figures and why they are important in understanding the confidence we have in a value.
+
+Now we need to learn the rules to how many significant figures we should use after doing calculations.

@@ -1,0 +1,51 @@
+# Introduction {#sec-introduction}
+
+This resource is created to scaffold your learning of errors and uncertainty in data analysis. Whilst these skills are taught here away from the lab, it is usually in the physical and analytical laboratory setting where you will use these skills.
+
+The resource is written in Markdown and has embedded questions which provide feedback. It is strongly encouraged that you start at the beginning and work through on your first use to check your learning. However you should be able to refer to sections as required when you are more familiar with the content.
+
+Chapter 1: @sec-chapter1
+
+* How many significant figures are there?
+* Making measurements and reading scales.
+* Rounding to even.
+
+Chapter 2: The use of the correct number of significant figures in calculations.
+
+* Using significant figures in addition ans subtraction.
+* Using significant figures in multiplication and division.
+* Using significant figures with logs.
+* Using significant figures with powers and roots.
+* Using significant figures in mixed calculations.
+
+Chapter 3: Averages and Standard Deviation
+
+- Calculating averages to appropriate significant figures.
+- Understanding data distribution and standard deviation.
+
+Chapter 4: The Standard Error
+
+- The standard error, a measure of our confidence in the sample mean.
+- Use of significant figures in reporting the standard error and the mean.
+
+Chapter 5: The Standard Error of Gradients and Intercepts
+
+- Calculating the standard error of gradients and intercepts in linear regression.
+- Examples in Excel.
+- Examples in Python.
+
+
+## Resource Credits
+This resource was created in conjunction with MAST at the University of Bath. Thanks go to Dr Tamsin Smith and in particular Ed Southwood for considerable assistance in developing the code for the regenerative questions.
+
+This workbook works in conjunction with Chapters 2 and 3 of ["An Introduction to Contextual Maths in Chemistry" by Fiona Dickinson and Andrew McKinley](https://books.rsc.org/books/monograph/1959/Introduction-to-Contextual-Maths-in-Chemistry), which is available in [paper](https://bath.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991003768059702761&context=L&vid=44BAT_INST:44BAT_VU1&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&isFrbr=true&tab=Everything&query=any,contains,maths%20dickinson&sortby=date_d&facet=frbrgroupid,include,9045141419038150349&offset=0) and [digital form](https://bath.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991003857104302761&context=L&vid=44BAT_INST:44BAT_VU1&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&isFrbr=true&tab=Everything&query=any,contains,maths%20dickinson&sortby=date_d&facet=frbrgroupid,include,9045141419038150349&offset=0) from the University of Bath library().
+
+## Error reporting
+
+Whilst care is taken in production of this manuscript, errors may be present. If you find an error, please report using the form below. Thank you for your help in improving this resource.
+
+<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=Ij1-N6FOLUKwrY_MiUBrniNYfTgBocZNjOvM4G_WxTZUQkNKQjNIRTVKTzBBRThEVjNQS1lCV0RTUC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+## Resource history
+
+* 16th June 2026 - First commit of index and chapter 1.

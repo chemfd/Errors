@@ -1,0 +1,102 @@
+[
+  {
+    "objectID": "chapter2.html",
+    "href": "chapter2.html",
+    "title": "3  The use of the correct number of significant figures in calculations.",
+    "section": "",
+    "text": "3.1 Significant figures in addition and subtraction\nIn Chapter 2 we have learnt about significant figures and why they are important in understanding the confidence we have in a value.\nNow we need to learn the rules to how many significant figures we should use after doing calculations.\nThere are different rules for how we handle significant figures depending upon the type of calculation we have done. Freqently we may have more than one step in a calculation, and therefore we need to be concious of the appropriate significant figures in each step.\nWe cannot add precision, I can’t measure something with a meter rule with 1 cm increments, a 15 cm rule with 1 mm increments and a micrometer with 1 μm increments and then add them together and expect to have a result with 1 μm precision. The result will be limited by the least precise measurement.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#significant-figures-in-addition-and-subtraction",
+    "href": "chapter2.html#significant-figures-in-addition-and-subtraction",
+    "title": "3  The use of the correct number of significant figures in calculations.",
+    "section": "",
+    "text": "Tip 3.1: Significant figures in addition and subtraction.\n\n\n\nWhen adding or subtracting values, the number of decimal places in the result should be the same as the value with the least number of decimal places in your calculation.\n\n\n\n\n\n\n\n\nCautionExamples of significant figures in addition and subtraction.\n\n\n\n\nConvert 20 ºC to Kelvin.\n\nWe know our measured temperature to 0 decimal places, therefore our answer should be to 0 decimal places.\nT = 20 ºC + 273.15 K = 293 K\n\nAn ideal gas was heated with 1.75 kJ of energy an allowed to do 250 J of work. What is the change in internal energy of the gas?\n\nIn this case we have different units, so if we convert 250 J to kJ we have 0.250 kJ. The least number of decimal places is 2, therefore our answer should be to 2 decimal places.\n\\(\\Delta U = 1.75 \\textrm{ kJ} - 0.250 \\textrm{ kJ} = 1.50 \\textrm{ kJ}\\)\nThis unit conversion kJ to J (or vice versa) is common in thermodynamics calculations where \\(\\Delta H\\) is usually reported in kJ mol\\(^{-1}\\), but \\(\\Delta S\\) is usually reported in J K mol\\(^{-1}\\).\nIt is easy to forget the significant zero at the end of this number as usually our calculator will not report it, but including it gives us our answer to a higher, more appropriate, precision.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html",
+    "href": "chapter1.html",
+    "title": "2  How many significant figures are there?",
+    "section": "",
+    "text": "2.1 Before we begin… Precision and Accuracy.\nIn talking about significant figures, standard erro and propagation of error, we need to be clear about what we mean by precision and accuracy.\nData has a spread, in taking physical measurements this is not something we can avoid. How well we can record a value is frequently limited by the equipment we are using. We will talk more about this spread of data in later chapters of this resource.\nWhen we are talking about significant figures, we are talking about precision. The more significant figures we have, the more precise our measurement is.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#before-we-begin-precision-and-accuracy.",
+    "href": "chapter1.html#before-we-begin-precision-and-accuracy.",
+    "title": "2  How many significant figures are there?",
+    "section": "",
+    "text": "Tip 2.1\n\n\n\n\nAccuracy is how close a measurement is to the true value.\nPrecision is how close a set of measurements are to each other.\n\n\n\n\n\n\nThe difference between accuracy and precision.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#significant-figures",
+    "href": "chapter1.html#significant-figures",
+    "title": "2  How many significant figures are there?",
+    "section": "2.2 Significant Figures",
+    "text": "2.2 Significant Figures\nOften at school you haven’t really thought about significant figures, but in science they are very important. The number of significant figures in a measurement is a measure of how precise that measurement is. The more significant figures, the more precise the measurement.\nTherefore it is important that we don’t ignore numbers which are significant, or report values to an undue number of significant figures.\nFrequently the only way you have thought about significant figures in school is to report things like (2dp) after a value - usually because you have trunkated the value and you want to be clear you are reporting a trunkated value. However this is not appropriate for post school life. Nobody has ever written 2dp or 3sf after a value in a research paper.\n\n\n\n\n\n\nImportantDon’t do this!\n\n\n\nNever write 2dp or 3sf after a value. It is not appropriate in science and will make you look like you don’t know what you are doing.\nInstead just write your answer to the correct number of significant figures.\n\n\nTherefore we have to have have a way of understanding the significant figures we have, how to report them in an appropriate way, and then we will see in Chapter 3 how to use them in calculations.\n\n\n\n\n\n\nNoteWhy we care about significant figures.\n\n\n\nSignificant figures are a measure of our confidence in a value.\nWhen we have many significant figures, we are more confident in the value. When we have few significant figures, we are less confident in the value.\nUsually if we have any uncertaintiy in a value it is in the last significant figure we report.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#how-many-significant-figures-are-there",
+    "href": "chapter1.html#how-many-significant-figures-are-there",
+    "title": "2  How many significant figures are there?",
+    "section": "2.3 How many significant figures are there?",
+    "text": "2.3 How many significant figures are there?\nLike many things in science, there are rules for how to determine the number of significant figures in a value. The rules are as follows:\n\n\n\n\n\n\nTip 2.2\n\n\n\n\nAny non-zero digit is significant\nAny 0 following a non-zero digit is significant\nAny 0 to the left of the first non-zero digit is not significant\n\n\n\nBy saying that any 0 after another digit we avoid ambiguity. This may be different to what you have been taught in school.\nBelow are examples of numbers and how many significant figures they have.\n\n\n\n\n\n\nCautionHow many significant figures are there?\n\n\n\n\\(\\begin{array}{cc}\n123 & 3 \\textrm{ sf}\\\\\n123.4 & 4 \\textrm{ sf}\\\\\n0.123 & 3 \\textrm{ sf}\\\\\n123400 & 6 \\textrm{ sf}\\\\\n123.4 \\times 10^3 & 4 \\textrm{ sf}\n\\end{array}\\)\n\n\nWe should use standard form (or unit prefixes where appropriate) to represent values to an appropriate precision.\n\n\n\n\n\n\nImportantDon’t do this!\n\n\n\nFreqently in exams I will see answers such as:\n\\(\\Delta H =\\) 123854.3628 J mol\\(^{-1}\\)\n\\(\\approx\\) 124000 J mol\\(^{-1}\\) (3sf)\nThis latter value is actually still written to 6 significant figures.\nWe do not need the \\(\\approx\\) sign as if are answer should be to three sig figs then the answer is correct to the correct number of significant figures.\nWe should write the answer with a unit prefix (or in standard form) to avoid ambiguity.\n\\(\\Delta H =\\) 124 kJ mol\\(^{-1}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#reading-values",
+    "href": "chapter1.html#reading-values",
+    "title": "2  How many significant figures are there?",
+    "section": "3.1 Reading values",
+    "text": "3.1 Reading values\nWhen we record values in the laboratory we are limited by the precision of the instrumentation we are using. We ususally make decisions about equipment unconciously, for example you don’t go seraching for a 4 decimal place balance to weigh out most reagents in the synthetic lab, but you frequently do this in the physical lab.\nThe balances are a good place to remind us that signficant zeros matter.\nThere is a big diference between 0.4 g and 0.4000 g in terms of our precision.\nOne thing that may be different to school is accepting that you cannot read a scale more accurately than the scale allows.\nFrequently in school you are told that if it is half way between the graduations on a burrette then you use an increased level of precision than the instrument allows. This is not appropriate in science.\n\n\n\n\n\n\nTip 3.1\n\n\n\nYou cannot read a scale more accurately than the scale allows.\n\n\n\n\n\nThe limit of precision on a burette means we can only read as accurately as the scale allows.\n\n\nIn the case of the burette above, we can only read to 1 decimal place. If the meniscus is between 19.6 and 19.7 mL, we cannot report the value as 19.65 mL (as you may have been taught in school). This is because we are adding a precision we do not have. How do we know it is 19.65 mL and not 19.66 mL or 19.64 mL? We don’t. Therefore we stick with the precision of the instrument.\nIn this case you either have to choose ‘is it closer to 19.6 mL or 19.7 mL’ and report the value as either 19.6 mL or 19.7 mL or to avoid systematic bias we round to even.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#round-to-even",
+    "href": "chapter1.html#round-to-even",
+    "title": "2  How many significant figures are there?",
+    "section": "3.2 Round to even",
+    "text": "3.2 Round to even\nIf we think about rounding we need to consider the possibility of systematic bias. If we always round up, then we will always be reporting a value that is higher than the true value. If we always round down, then we will always be reporting a value that is lower than the true value.\nConsider the following values which we need to report to 1 decimal place:\n\n\n\n\n\n\nCautionRounding values?\n\n\n\n\\(\\begin{array}{ccc}\n19.10 & 19.1 & \\textrm{no rounding needed}\\\\\n19.11 & 19.1 & \\textrm{round down}\\\\\n19.12 & 19.1 & \\textrm{round down}\\\\\n19.13 & 19.1 & \\textrm{round down}\\\\\n19.14 & 19.1 & \\textrm{round down}\\\\\n19.15 & 19.? & ???\\\\\n19.16 & 19.2 & \\textrm{round up}\\\\\n19.17 & 19.2 & \\textrm{round up}\\\\\n19.18 & 19.2 & \\textrm{round up}\\\\\n19.19 & 19.2 & \\textrm{round up}\\\\\n19.20 & 19.2 & \\textrm{no rounding needed}  \\\\\n\\end{array}\\)\n\n\nIf we always round the value ending in a 5 up (as you maybe always have before) then we have more values rounding up than we have rounding ndown and we introduce a slight systematic bias increasing our value over all.\nTherefore if a value ends exactly in a 5 and needs to be rounded we instead ‘round to even’, which should mean that half of the time it will round up and half of the time it rounds down.\n\n\n\n\n\n\nTip 3.2\n\n\n\nIf a value ends in a 5 exactly and needs rounding we should round to the nearest even number.\n\n\n\n\n\n\n\n\nCautionExamples of rounding to even.\n\n\n\nIf each of the following should be reported to 3 significant figures\n\\(\\begin{array}{cccc}\n47.58 & \\textrm{rounds up to} & 47.6 &\\\\\n8.325 & \\textrm{rounds down to} & 8.32 & \\textrm{rounded to even}\\\\\n3.621 & \\textrm{rounds down to} & 3.62 &\\\\\n64.55 & \\textrm{rounds up to} & 64.6 & \\textrm{rounded to even}\\\\\n10.050003 & \\textrm{rounds up to} & 10.5 &\\\\\n\\end{array}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#exercises-with-addition-subtraction-examples.",
+    "href": "chapter2.html#exercises-with-addition-subtraction-examples.",
+    "title": "3  The use of the correct number of significant figures in calculations.",
+    "section": "3.2 Exercises with addition subtraction examples.",
+    "text": "3.2 Exercises with addition subtraction examples.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#significant-figures-in-multiplication-and-division",
+    "href": "chapter2.html#significant-figures-in-multiplication-and-division",
+    "title": "3  The use of the correct number of significant figures in calculations.",
+    "section": "3.3 Significant figures in multiplication and division",
+    "text": "3.3 Significant figures in multiplication and division\nWhen multiplying or dividing values, the number of significant figures in the result should be the same as the value with the least number of significant figures in your calculation.\nFirst we need to quickly count the number of significant figures in each value. If we have a unit conversion (such as mm to cm) then this is ‘exact’ and does not change the number of significant figures in our value. Some unit conversions have limited significant figures, others are precise. In either case it is always a good habit to use more significant figures in constants than in our other values.\n\n\n\n\n\n\nTip 3.2: Significant figures in multiplication and division.\n\n\n\nWhen multiplying or dividing values, the number of significant figures in the result should be the same as the value with the least number of significant figures in your calculation.\n\n\n\n\n\n\n\n\nCautionExample of significant figures in multiplication and division - the ideal gas law.\n\n\n\n\nDetermine the number of moles of gas in a cylinder with a volume of exactly 2.52 L at a pressure of 50.24 bar and a temperature of 273 K.\n\nHere we need to do a couple of unit conversions to get our values into base SI units.\nThe volume is already in L, which is a derived unit, but we need to convert it to m\\(^3\\). 1 L \\(\\equiv\\) 1 dm\\(^3\\) = 1 x 10\\(^{-3}\\) m\\(^3\\), so we have 2.52 L = 2.52 x 10\\(^{-3}\\) m\\(^3\\). This is an exact conversion, so the number of significant figures in our value does not change. Recall that the volume is described as “exactly” 2.52 L, so we have ‘infinite’ significant figures in our volume.\nThe pressure is in bar, which is not an SI unit, so we need to convert it to Pa. 1 bar = 1 x 10\\(^5\\) Pa, so we have 50.24 bar = 5.024 x 10\\(^6\\) Pa. This is also an exact conversion. The pressure has 4 significant figures, so our pressure in bar will also have 4 significant figures.\nUsing the ideal gas law, we can calculate the number of moles of gas in the cylinder.\n\\(pV = nRT\\) so \\(n = \\frac{pV}{RT}\\)\nPutting in our values:\n\\[n = \\frac{5.024 \\times 10^6 \\textrm{ Pa} \\times 2.52 \\times 10^{-3} \\textrm{ m}^3}{8.31446 \\textrm{ J K}^{-1} \\textrm{ mol}^{-1} \\times 273 \\textrm{ K}}\\]\n\\(n = 5.58 \\textrm{ mol}\\)\nTemperature only has 3 significant figures, so our answer should be reported to 3 significant figures.\n\n\n\n\n\n\n\n\nCautionExample of significant figures in multiplication and division - heat capacity.\n\n\n\n\nDetermine the energy put into a system when a 1.000 kg block of copper is heated from 20.16 ºC to 60.52 ºC. The specific heat capacity of copper is 385 J kg\\(^{-1}\\) K\\(^{-1}\\).\n\nWe can calculate the energy put into the system using the equation:\n\\(q = m c \\Delta T\\)\nFirst we need to determine the change in temperature, \\(\\Delta T\\).\n\\(\\Delta T = T_{\\textrm{final}} - T_{\\textrm{initial}}\\) \\(\\Delta T = 60.52 ºC - 20.16 ºC = 40.36 ºC\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+    ]
+  }
+]
