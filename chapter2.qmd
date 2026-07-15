@@ -6,7 +6,9 @@ Now we need to learn the rules to how many significant figures we should use aft
 
 There are different rules for how we handle significant figures depending upon the type of calculation we have done. Freqently we may have more than one step in a calculation, and therefore we need to be concious of the appropriate significant figures in each step.
 
-## Significant figures in addition and subtraction
+## Significant figures in addition and subtraction {#subsec-sfaddsub}
+
+When adding or subtracting values, the number of decimal places in the result should be the same as the value with the least number of decimal places in your calculation.
 
 We cannot add precision, I can't measure something with a meter rule with 1 cm increments, a 15 cm rule with 1 mm increments and a micrometer with 1 μm increments and then add them together and expect to have a result with 1 μm precision. The result will be limited by the least precise measurement.
 
@@ -36,7 +38,7 @@ It is easy to forget the significant zero at the end of this number as usually o
 
 ## Exercises with addition subtraction examples.
 
-## Significant figures in multiplication and division
+## Significant figures in multiplication and division {#subsec-sfmuldiv}
 
 When multiplying or dividing values, the number of significant figures in the result should be the same as the value with the least number of significant figures in your calculation.
 
@@ -84,5 +86,19 @@ $q = m c \Delta T$
 First we need to determine the change in temperature, $\Delta T$.
 
 $\Delta T = T_{\textrm{final}} - T_{\textrm{initial}}$
+
 $\Delta T = 60.52 ºC - 20.16 ºC = 40.36 ºC$
+
+We've followed the rules for addition and subtraction, so our answer has 2 decimal places, which is the same as the least number of decimal places in our calculation.
+
+Now we can calculate the energy put into the system, $q$.
+
+$q = 1.000 \textrm{ kg} \times 385 \textrm{ J kg}^{-1} \textrm{ K}^{-1} \times 40.36 \textrm{ K}$
+
+The mass has 4 significant figures, the specific heat capacity has 3 significant figures, and the temperature change has 4 significant figures. The least number of significant figures in our calculation is 3, so our answer should be reported to 3 significant figures.
+
+$q = 15.5 \textrm{ kJ}$
+
+Note: I've changed my units to kJ to make reporting to 3 significant figures easier. If I had left my answer in J, I would have reported it as 15.5 $\times$ 10³ J, which is not as clear (and is more to type).
 :::
+

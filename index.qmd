@@ -1,19 +1,19 @@
-# Introduction {#sec-introduction}
+# Introduction {#sec-introduction .unnumbered}
 
 This resource is created to scaffold your learning of errors and uncertainty in data analysis. Whilst these skills are taught here away from the lab, it is usually in the physical and analytical laboratory setting where you will use these skills.
 
 The resource is written in Markdown and has embedded questions which provide feedback. It is strongly encouraged that you start at the beginning and work through on your first use to check your learning. However you should be able to refer to sections as required when you are more familiar with the content.
 
-Chapter 1: @sec-chapter1
+Chapter @sec-chapter1 
 
 * How many significant figures are there?
 * Making measurements and reading scales.
 * Rounding to even.
 
-Chapter 2: The use of the correct number of significant figures in calculations.
+Chapter @sec-chapter2
 
-* Using significant figures in addition ans subtraction.
-* Using significant figures in multiplication and division.
+* @subsec-sfaddsub Using significant figures in addition and subtraction.
+* @subsec-sfmuldiv Using significant figures in multiplication and division.
 * Using significant figures with logs.
 * Using significant figures with powers and roots.
 * Using significant figures in mixed calculations.

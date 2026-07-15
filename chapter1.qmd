@@ -111,7 +111,7 @@ Frequently in school you are told that if it is half way between the graduations
 You cannot read a scale more accurately than the scale allows.
 :::
 
-![The limit of precision on a burette means we can only read as accurately as the scale allows.](Images/burette.png){fig-alt="A sketch of a burette with a meniscus bottom between 19.6 and 19.7 mL."}
+![The limit of precision on a burette means we can only read as accurately as the scale allows.](Images/burette.png){fig-alt="A sketch of a burette with a meniscus bottom between 19.6 and 19.7 mL. " width="30%"}
 
 In the case of the burette above, we can only read to 1 decimal place. If the meniscus is between 19.6 and 19.7 mL, we **cannot** report the value as 19.65 mL (as you may have been taught in school). This is because we are adding a precision we do not have. How do we know it is 19.65 mL and not 19.66 mL or 19.64 mL? We don't. Therefore we stick with the precision of the instrument.
 
@@ -163,4 +163,4 @@ $\begin{array}{cccc}
 :::
 
 
-# Exercise write the following values to the listed sf.
+## Exercise write the following values to the listed sf.
