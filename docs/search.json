@@ -1,22 +1,42 @@
 [
   {
-    "objectID": "chapter2.html",
-    "href": "chapter2.html",
-    "title": "3  The use of the correct number of significant figures in calculations.",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "An Introduction to Errors and Error Analysis",
     "section": "",
-    "text": "3.1 Significant figures in addition and subtraction\nIn Chapter 2 we have learnt about significant figures and why they are important in understanding the confidence we have in a value.\nNow we need to learn the rules to how many significant figures we should use after doing calculations.\nThere are different rules for how we handle significant figures depending upon the type of calculation we have done. Freqently we may have more than one step in a calculation, and therefore we need to be concious of the appropriate significant figures in each step.\nWe cannot add precision, I can’t measure something with a meter rule with 1 cm increments, a 15 cm rule with 1 mm increments and a micrometer with 1 μm increments and then add them together and expect to have a result with 1 μm precision. The result will be limited by the least precise measurement.",
+    "text": "1 Introduction\nThis resource is created to scaffold your learning of errors and uncertainty in data analysis. Whilst these skills are taught here away from the lab, it is usually in the physical and analytical laboratory setting where you will use these skills.\nThe resource is written in Markdown and has embedded questions which provide feedback. It is strongly encouraged that you start at the beginning and work through on your first use to check your learning. However you should be able to refer to sections as required when you are more familiar with the content.\nChapter 1: Chapter 2\nChapter 2: The use of the correct number of significant figures in calculations.\nChapter 3: Averages and Standard Deviation\nChapter 4: The Standard Error\nChapter 5: The Standard Error of Gradients and Intercepts",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
-    "objectID": "chapter2.html#significant-figures-in-addition-and-subtraction",
-    "href": "chapter2.html#significant-figures-in-addition-and-subtraction",
-    "title": "3  The use of the correct number of significant figures in calculations.",
-    "section": "",
-    "text": "Tip 3.1: Significant figures in addition and subtraction.\n\n\n\nWhen adding or subtracting values, the number of decimal places in the result should be the same as the value with the least number of decimal places in your calculation.\n\n\n\n\n\n\n\n\nCautionExamples of significant figures in addition and subtraction.\n\n\n\n\nConvert 20 ºC to Kelvin.\n\nWe know our measured temperature to 0 decimal places, therefore our answer should be to 0 decimal places.\nT = 20 ºC + 273.15 K = 293 K\n\nAn ideal gas was heated with 1.75 kJ of energy an allowed to do 250 J of work. What is the change in internal energy of the gas?\n\nIn this case we have different units, so if we convert 250 J to kJ we have 0.250 kJ. The least number of decimal places is 2, therefore our answer should be to 2 decimal places.\n\\(\\Delta U = 1.75 \\textrm{ kJ} - 0.250 \\textrm{ kJ} = 1.50 \\textrm{ kJ}\\)\nThis unit conversion kJ to J (or vice versa) is common in thermodynamics calculations where \\(\\Delta H\\) is usually reported in kJ mol\\(^{-1}\\), but \\(\\Delta S\\) is usually reported in J K mol\\(^{-1}\\).\nIt is easy to forget the significant zero at the end of this number as usually our calculator will not report it, but including it gives us our answer to a higher, more appropriate, precision.",
+    "objectID": "index.html#resource-credits",
+    "href": "index.html#resource-credits",
+    "title": "An Introduction to Errors and Error Analysis",
+    "section": "1.1 Resource Credits",
+    "text": "1.1 Resource Credits\nThis resource was created in conjunction with MAST at the University of Bath. Thanks go to Dr Tamsin Smith and in particular Ed Southwood for considerable assistance in developing the code for the regenerative questions.\nThis workbook works in conjunction with Chapters 2 and 3 of “An Introduction to Contextual Maths in Chemistry” by Fiona Dickinson and Andrew McKinley, which is available in paper and digital form from the University of Bath library().",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#error-reporting",
+    "href": "index.html#error-reporting",
+    "title": "An Introduction to Errors and Error Analysis",
+    "section": "1.2 Error reporting",
+    "text": "1.2 Error reporting\nWhilst care is taken in production of this manuscript, errors may be present. If you find an error, please report using the form below. Thank you for your help in improving this resource.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#resource-history",
+    "href": "index.html#resource-history",
+    "title": "An Introduction to Errors and Error Analysis",
+    "section": "1.3 Resource history",
+    "text": "1.3 Resource history\n\n16th June 2026 - First commit of index and chapter 1.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
@@ -77,6 +97,26 @@
     "text": "3.2 Round to even\nIf we think about rounding we need to consider the possibility of systematic bias. If we always round up, then we will always be reporting a value that is higher than the true value. If we always round down, then we will always be reporting a value that is lower than the true value.\nConsider the following values which we need to report to 1 decimal place:\n\n\n\n\n\n\nCautionRounding values?\n\n\n\n\\(\\begin{array}{ccc}\n19.10 & 19.1 & \\textrm{no rounding needed}\\\\\n19.11 & 19.1 & \\textrm{round down}\\\\\n19.12 & 19.1 & \\textrm{round down}\\\\\n19.13 & 19.1 & \\textrm{round down}\\\\\n19.14 & 19.1 & \\textrm{round down}\\\\\n19.15 & 19.? & ???\\\\\n19.16 & 19.2 & \\textrm{round up}\\\\\n19.17 & 19.2 & \\textrm{round up}\\\\\n19.18 & 19.2 & \\textrm{round up}\\\\\n19.19 & 19.2 & \\textrm{round up}\\\\\n19.20 & 19.2 & \\textrm{no rounding needed}  \\\\\n\\end{array}\\)\n\n\nIf we always round the value ending in a 5 up (as you maybe always have before) then we have more values rounding up than we have rounding ndown and we introduce a slight systematic bias increasing our value over all.\nTherefore if a value ends exactly in a 5 and needs to be rounded we instead ‘round to even’, which should mean that half of the time it will round up and half of the time it rounds down.\n\n\n\n\n\n\nTip 3.2\n\n\n\nIf a value ends in a 5 exactly and needs rounding we should round to the nearest even number.\n\n\n\n\n\n\n\n\nCautionExamples of rounding to even.\n\n\n\nIf each of the following should be reported to 3 significant figures\n\\(\\begin{array}{cccc}\n47.58 & \\textrm{rounds up to} & 47.6 &\\\\\n8.325 & \\textrm{rounds down to} & 8.32 & \\textrm{rounded to even}\\\\\n3.621 & \\textrm{rounds down to} & 3.62 &\\\\\n64.55 & \\textrm{rounds up to} & 64.6 & \\textrm{rounded to even}\\\\\n10.050003 & \\textrm{rounds up to} & 10.5 &\\\\\n\\end{array}\\)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>How many significant figures are there?</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html",
+    "href": "chapter2.html",
+    "title": "3  The use of the correct number of significant figures in calculations.",
+    "section": "",
+    "text": "3.1 Significant figures in addition and subtraction\nIn Chapter 2 we have learnt about significant figures and why they are important in understanding the confidence we have in a value.\nNow we need to learn the rules to how many significant figures we should use after doing calculations.\nThere are different rules for how we handle significant figures depending upon the type of calculation we have done. Freqently we may have more than one step in a calculation, and therefore we need to be concious of the appropriate significant figures in each step.\nWe cannot add precision, I can’t measure something with a meter rule with 1 cm increments, a 15 cm rule with 1 mm increments and a micrometer with 1 μm increments and then add them together and expect to have a result with 1 μm precision. The result will be limited by the least precise measurement.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html#significant-figures-in-addition-and-subtraction",
+    "href": "chapter2.html#significant-figures-in-addition-and-subtraction",
+    "title": "3  The use of the correct number of significant figures in calculations.",
+    "section": "",
+    "text": "Tip 3.1: Significant figures in addition and subtraction.\n\n\n\nWhen adding or subtracting values, the number of decimal places in the result should be the same as the value with the least number of decimal places in your calculation.\n\n\n\n\n\n\n\n\nCautionExamples of significant figures in addition and subtraction.\n\n\n\n\nConvert 20 ºC to Kelvin.\n\nWe know our measured temperature to 0 decimal places, therefore our answer should be to 0 decimal places.\nT = 20 ºC + 273.15 K = 293 K\n\nAn ideal gas was heated with 1.75 kJ of energy an allowed to do 250 J of work. What is the change in internal energy of the gas?\n\nIn this case we have different units, so if we convert 250 J to kJ we have 0.250 kJ. The least number of decimal places is 2, therefore our answer should be to 2 decimal places.\n\\(\\Delta U = 1.75 \\textrm{ kJ} - 0.250 \\textrm{ kJ} = 1.50 \\textrm{ kJ}\\)\nThis unit conversion kJ to J (or vice versa) is common in thermodynamics calculations where \\(\\Delta H\\) is usually reported in kJ mol\\(^{-1}\\), but \\(\\Delta S\\) is usually reported in J K mol\\(^{-1}\\).\nIt is easy to forget the significant zero at the end of this number as usually our calculator will not report it, but including it gives us our answer to a higher, more appropriate, precision.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The use of the correct number of significant figures in calculations.</span>"
     ]
   },
   {
