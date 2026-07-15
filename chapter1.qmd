@@ -1,6 +1,6 @@
 # How many significant figures are there? {#sec-chapter1}
 
-## Before we begin... Precision and Accuracy.
+## Before we begin... Precision and Accuracy. {#sec-precisionaccuracy}
 
 In talking about significant figures, standard erro and propagation of error, we need to be clear about what we mean by precision and accuracy.
 
@@ -18,7 +18,7 @@ Data has a spread, in taking physical measurements this is not something we can 
 When we are talking about significant figures, we are talking about precision. The more significant figures we have, the more precise our measurement is.
 
 
-## Significant Figures
+## Significant Figures {#sec-significantfigures}
 
 Often at school you haven't really thought about significant figures, but in science they are very important. The number of significant figures in a measurement is a measure of how precise that measurement is. The more significant figures, the more precise the measurement.
 
@@ -42,7 +42,7 @@ When we have many significant figures, we are more confident in the value. When 
 Usually if we have any uncertaintiy in a value it is in the last significant figure we report.
 :::
 
-## How many significant figures are there?
+## How many significant figures are there? {#sec-howmanysf}
 
 Like many things in science, there are rules for how to determine the number of significant figures in a value. The rules are as follows:
 
@@ -93,7 +93,7 @@ $\Delta H =$ 124 kJ mol$^{-1}$
 # Exercise on counting signficant figures {#sec-exercise-sf}
 
 
-## Reading values
+## Reading values {#sec-readingvalues}
 
 When we record values in the laboratory we are limited by the precision of the instrumentation we are using. We ususally make decisions about equipment unconciously, for example you don't go seraching for a 4 decimal place balance to weigh out most reagents in the synthetic lab, but you frequently do this in the physical lab.
 
@@ -117,7 +117,7 @@ In the case of the burette above, we can only read to 1 decimal place. If the me
 
 In this case you either have to choose 'is it closer to 19.6 mL or 19.7 mL' and report the value as either 19.6 mL or 19.7 mL or to avoid systematic bias we *round to even*.
 
-## Round to even
+## Round to even {#sec-roundtoeven}
 
 If we think about rounding we need to consider the possibility of systematic bias. If we always round up, then we will always be reporting a value that is higher than the true value. If we always round down, then we will always be reporting a value that is lower than the true value.
 

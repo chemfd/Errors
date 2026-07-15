@@ -179,9 +179,10 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#significant-figures-in-addition-and-subtraction" id="toc-significant-figures-in-addition-and-subtraction" class="nav-link active" data-scroll-target="#significant-figures-in-addition-and-subtraction"><span class="header-section-number">2.1</span> Significant figures in addition and subtraction</a></li>
+  <li><a href="#sec-sfaddsub" id="toc-sec-sfaddsub" class="nav-link active" data-scroll-target="#sec-sfaddsub"><span class="header-section-number">2.1</span> Significant figures in addition and subtraction</a></li>
   <li><a href="#exercises-with-addition-subtraction-examples." id="toc-exercises-with-addition-subtraction-examples." class="nav-link" data-scroll-target="#exercises-with-addition-subtraction-examples."><span class="header-section-number">2.2</span> Exercises with addition subtraction examples.</a></li>
-  <li><a href="#significant-figures-in-multiplication-and-division" id="toc-significant-figures-in-multiplication-and-division" class="nav-link" data-scroll-target="#significant-figures-in-multiplication-and-division"><span class="header-section-number">2.3</span> Significant figures in multiplication and division</a></li>
+  <li><a href="#sec-sfmuldiv" id="toc-sec-sfmuldiv" class="nav-link" data-scroll-target="#sec-sfmuldiv"><span class="header-section-number">2.3</span> Significant figures in multiplication and division</a></li>
+  <li><a href="#sec-sflog" id="toc-sec-sflog" class="nav-link" data-scroll-target="#sec-sflog"><span class="header-section-number">2.4</span> Significant figures in logs and lns</a></li>
   </ul>
 </nav>
     </div>
@@ -210,8 +211,9 @@ window.Quarto = {
 <p>In <a href="chapter1.html" class="quarto-xref"><span>Chapter 1</span></a> we have learnt about significant figures and why they are important in understanding the confidence we have in a value.</p>
 <p>Now we need to learn the rules to how many significant figures we should use after doing calculations.</p>
 <p>There are different rules for how we handle significant figures depending upon the type of calculation we have done. Freqently we may have more than one step in a calculation, and therefore we need to be concious of the appropriate significant figures in each step.</p>
-<section id="significant-figures-in-addition-and-subtraction" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="significant-figures-in-addition-and-subtraction"><span class="header-section-number">2.1</span> Significant figures in addition and subtraction</h2>
+<section id="sec-sfaddsub" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-sfaddsub"><span class="header-section-number">2.1</span> Significant figures in addition and subtraction</h2>
+<p>When adding or subtracting values, the number of decimal places in the result should be the same as the value with the least number of decimal places in your calculation.</p>
 <p>We cannot add precision, I can’t measure something with a meter rule with 1 cm increments, a 15 cm rule with 1 mm increments and a micrometer with 1 μm increments and then add them together and expect to have a result with 1 μm precision. The result will be limited by the least precise measurement.</p>
 <div id="tip-scales" class="callout callout-style-default callout-tip callout-titled" title="Significant figures in addition and subtraction.">
 <div class="callout-header d-flex align-content-center">
@@ -254,8 +256,8 @@ Tip&nbsp;2.1: Significant figures in addition and subtraction.
 <section id="exercises-with-addition-subtraction-examples." class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="exercises-with-addition-subtraction-examples."><span class="header-section-number">2.2</span> Exercises with addition subtraction examples.</h2>
 </section>
-<section id="significant-figures-in-multiplication-and-division" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="significant-figures-in-multiplication-and-division"><span class="header-section-number">2.3</span> Significant figures in multiplication and division</h2>
+<section id="sec-sfmuldiv" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-sfmuldiv"><span class="header-section-number">2.3</span> Significant figures in multiplication and division</h2>
 <p>When multiplying or dividing values, the number of significant figures in the result should be the same as the value with the least number of significant figures in your calculation.</p>
 <p>First we need to quickly count the number of significant figures in each value. If we have a unit conversion (such as mm to cm) then this is ‘exact’ and does not change the number of significant figures in our value. Some unit conversions have limited significant figures, others are precise. In either case it is always a good habit to use more significant figures in constants than in our other values.</p>
 <div id="tip-scales" class="callout callout-style-default callout-tip callout-titled" title="Significant figures in multiplication and division.">
@@ -319,6 +321,45 @@ Tip&nbsp;2.2: Significant figures in multiplication and division.
 <p>The mass has 4 significant figures, the specific heat capacity has 3 significant figures, and the temperature change has 4 significant figures. The least number of significant figures in our calculation is 3, so our answer should be reported to 3 significant figures.</p>
 <p><span class="math inline">\(q = 15.5 \textrm{ kJ}\)</span></p>
 <p>Note: I’ve changed my units to kJ to make reporting to 3 significant figures easier. If I had left my answer in J, I would have reported it as 15.5 <span class="math inline">\(\times\)</span> 10³ J, which is not as clear (and is more to type).</p>
+</div>
+</div>
+</section>
+<section id="sec-sflog" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-sflog"><span class="header-section-number">2.4</span> Significant figures in logs and lns</h2>
+<p>Significant figures in logs and lns are a little different to the rules for addition, subtraction, multiplication and division because we have to think about the ‘value’ when accounting for how many significant figures we have in our answer.</p>
+<div id="tip-scales" class="callout callout-style-default callout-tip callout-titled" title="Significant figures in logs and lns.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;2.3: Significant figures in logs and lns.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 1 and the base then we do not gain a significant figure.</p>
+</div>
+</div>
+<p>Practically what does this mean? and why the do we sometimes gain a significant figure? The following example using <span class="math inline">\(\log_{10}\)</span> will help to explain this.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Example of significant figures in logs and lns.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Example of significant figures in logs and lns.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Determine <span class="math inline">\(\log (2.234)\)</span>, <span class="math inline">\(\log(22.34)\)</span> and <span class="math inline">\(\log(223.4)\)</span> to the correct number of significant figures.</p>
+<p>Our first example is <span class="math inline">\(\log(2.234)\)</span>. The value of <span class="math inline">\(\log(2.234)\)</span> is 0.3490831688….</p>
+<p>The value we are taking the log of has 4 significant figures, so our answer should have 4 significant figures. Therefore we report our answer as 0.3491.</p>
+<p>Now, if I take the log of 22.34 I can also write this as <span class="math inline">\(\log(2.234 \times 10^1)\)</span>.</p>
+<p>Using our ‘rules of logs’, we can write this as <span class="math inline">\(\log(2.234) + \log(10^1) = 0.3491 + 1 = 1.3491\)</span>.</p>
+<p>Since our value of <span class="math inline">\(\log(10^1)\)</span> is an exact value, it can be considered to have infinite significant figures, and we can add these values according to the rules in <a href="#sec-sfaddsub" class="quarto-xref"><span>Section 2.1</span></a>.</p>
+<p>Finally, if I take the log of 223.4 I can also write this as <span class="math inline">\(\log(2.234 \times 10^2)\)</span>. The value we are taking the log of has 4 significant figures, so our answer should have 4 significant figures. Therefore we report our answer as 2.3491.</p>
+<p>You can see why we gain a significant figure when taking the log of a value greater than 10, but not when taking the log of a value less than 10. The ‘value’ of the number we are taking the log of is important in determining how many significant figures we have in our answer.</p>
+<p>The same principle works if we have very small numbers, for example <span class="math inline">\(\log(0.002234)\)</span> which we can write as <span class="math inline">\(\log(2.234 \times 10^{-3}) = \log(2.234) + \log(10^{-3}) = 0.3491 - 3 = -2.6509\)</span>.</p>
 </div>
 </div>
 

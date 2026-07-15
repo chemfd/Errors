@@ -6,17 +6,19 @@ The resource is written in Markdown and has embedded questions which provide fee
 
 Chapter @sec-chapter1 
 
-* How many significant figures are there?
-* Making measurements and reading scales.
-* Rounding to even.
+* @sec-precisionaccuracy Understanding precision and accuracy.
+* @sec-significantfigures Understanding significant figures and how to count them.
+* @sec-howmanysf How many significant figures are there?
+* @sec-readingvalues Making measurements and reading scales.
+* @sec-roundtoeven Rounding to even.
 
 Chapter @sec-chapter2
 
-* @subsec-sfaddsub Using significant figures in addition and subtraction.
-* @subsec-sfmuldiv Using significant figures in multiplication and division.
-* Using significant figures with logs.
-* Using significant figures with powers and roots.
-* Using significant figures in mixed calculations.
+* @sec-sfaddsub Using significant figures in addition and subtraction.
+* @sec-sfmuldiv Using significant figures in multiplication and division.
+* @sec-sflog Using significant figures with logs.
+* @sec-sfpowers Using significant figures with powers and roots.
+* @sec-sfmixed Using significant figures in mixed calculations.
 
 Chapter 3: Averages and Standard Deviation
 
