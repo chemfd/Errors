@@ -46,8 +46,12 @@ This workbook works in conjunction with Chapters 2 and 3 of ["An Introduction to
 
 Whilst care is taken in production of this manuscript, errors may be present. If you find an error, please report using the form below. Thank you for your help in improving this resource.
 
-<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=Ij1-N6FOLUKwrY_MiUBrniNYfTgBocZNjOvM4G_WxTZUQkNKQjNIRTVKTzBBRThEVjNQS1lCV0RTUC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+```{=html}
+<iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=Ij1-N6FOLUKwrY_MiUBrniNYfTgBocZNjOvM4G_WxTZUQkNKQjNIRTVKTzBBRThEVjNQS1lCV0RTUC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen" width="640" height="480"></iframe>
+```
 
 ## Resource history
 
+
+* 17th July 2026 - First embedded question code included, chapter 2 start.
 * 16th June 2026 - First commit of index and chapter 1.

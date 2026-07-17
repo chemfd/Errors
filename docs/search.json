@@ -34,7 +34,7 @@
     "href": "index.html#resource-history",
     "title": "An Introduction to Errors and Error Analysis",
     "section": "Resource history",
-    "text": "Resource history\n\n16th June 2026 - First commit of index and chapter 1.",
+    "text": "Resource history\n\n17th July 2026 - First embedded question code included, chapter 2 start.\n16th June 2026 - First commit of index and chapter 1.",
     "crumbs": [
       "Introduction"
     ]
@@ -103,8 +103,8 @@
     "objectID": "chapter1.html#self-assessment-exercise-write-the-following-values-to-the-listed-sf.-sec-saqroundtoeven",
     "href": "chapter1.html#self-assessment-exercise-write-the-following-values-to-the-listed-sf.-sec-saqroundtoeven",
     "title": "1  How many significant figures are there?",
-    "section": "2.3 Self assessment exercise: write the following values to the listed sf. {sec-SAQroundtoeven}",
-    "text": "2.3 Self assessment exercise: write the following values to the listed sf. {sec-SAQroundtoeven}",
+    "section": "2.3 Self assessment exercise: Write the following values to the listed sf. {sec-SAQroundtoeven}",
+    "text": "2.3 Self assessment exercise: Write the following values to the listed sf. {sec-SAQroundtoeven}",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>How many significant figures are there?</span>"
     ]
