@@ -163,8 +163,8 @@ $\begin{array}{cccc}
 :::
 
 
-## Exercise write the following values to the listed sf.
+## Self assessment exercise: write the following values to the listed sf. {sec-SAQroundtoeven}
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/208753/round-to-even/embed/?token=598f9753-985c-49ca-9153-526bb2f8b880" width="800" height="600"></iframe>
+<iframe src="https://numbas.mathcentre.ac.uk/question/208753/round-to-even/embed/?token=598f9753-985c-49ca-9153-526bb2f8b880" width="400" height="300"></iframe>
 ```
