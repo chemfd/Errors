@@ -162,6 +162,32 @@ $\begin{array}{cccc}
 
 :::
 
+::: {.callout-note collapse="true"}
+## What is 16453 rounded to 2 significant figures?
+
+16 $\times 10^3$
+
+Any number we write is considered significant so we can't write 16000 and think it is 2 significant figures. We need to use standard form to avoid ambiguity.
+:::
+
+::: {.callout-note collapse="true"}
+## What is 0.090305 rounded to 2 significant figures?
+
+0.090
+
+It is easy to forget significant zeros after our first non-zero digit. In this case we have 2 significant figures, the 9 and the 0 after it.
+:::
+
+
+::: {.callout-note collapse="true"}
+## What is 2.4503 rounded to 2 significant figures?
+
+2.5
+
+In this case round to even doesn't apply as it isn't exactly '5'.
+:::
+
+
 
 ## Self assessment exercise: Write the following values to the listed sf. {#sec-SAQroundtoeven}
 
