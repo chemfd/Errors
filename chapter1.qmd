@@ -162,10 +162,14 @@ $\begin{array}{cccc}
 
 :::
 
+## Self assessment exercises
+
+### Self check on our learning so far. {#sec-SelfcheckSF}
+
 ::: {.callout-note collapse="true"}
 ## What is 16453 rounded to 2 significant figures?
 
-16 $\times 10^3$
+16 $\times$ 10$^3$
 
 Any number we write is considered significant so we can't write 16000 and think it is 2 significant figures. We need to use standard form to avoid ambiguity.
 :::
@@ -188,8 +192,15 @@ In this case round to even doesn't apply as it isn't exactly '5'.
 :::
 
 
+::: {.callout-note collapse="true"}
+## What is 37.4500 rounded to 3 significant figures?
 
-## Self assessment exercise: Write the following values to the listed sf. {#sec-SAQroundtoeven}
+37.4
+
+In this case round to even does apply as it is a 5 we are having to round.
+:::
+
+### Self assessment exercise: Write the following values to the listed sf. {#sec-SAQroundtoeven}
 
 ```{=html}
 <iframe src="https://numbas.mathcentre.ac.uk/question/208753/round-to-even/embed/?token=598f9753-985c-49ca-9153-526bb2f8b880" width=100% height="300"></iframe>

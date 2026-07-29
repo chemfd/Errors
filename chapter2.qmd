@@ -38,6 +38,89 @@ It is easy to forget the significant zero at the end of this number as usually o
 
 ## Exercises with addition subtraction examples.
 
+### Self check on our learning so far. {#sec-SelfcheckSFaddsub}
+
+::: {.callout-note collapse="true"}
+## What is 15.4 g + 0.16 g to the correct number of significant figures?
+
+15.6 g
+
+The rule for adding and subtracting is that the answer should be reported to the least number of decimal places in the calculation. In this case 15.4 g has 1 decimal place, and 0.16 g has 2 decimal places, so our answer should be reported to 1 decimal place.
+
+:::
+
+::: {.callout-note collapse="true"}
+## What is -154.3 kJ mol$^{-1}$ + 894.2 J mol$^{-1}$ to the correct number of significant figures?
+
+-153.4 kJ mol$^{-1}$
+
+Here we have different units, so if we convert 894.2 J mol$^{-1}$ to kJ mol$^{-1}$ we have 0.8942 kJ mol$^{-1}$. 
+
+Now we can compare the number of decimal places in each value. -154.3 kJ mol$^{-1}$ has 1 decimal place, and 0.8942 kJ mol$^{-1}$ has 4 decimal places, so keeping the fewest decimal places, our answer should be reported to 1 decimal place.
+
+:::
+
+The following are molar masses of some common elements. Use these values to answer the following questions.
+
+H = 1.00794 g mol$^{-1}$
+C = 12.011 g mol$^{-1}$
+O = 15.9994 g mol$^{-1}$
+N = 14.0067 g mol$^{-1}$
+Cl = 35.45 g mol$^{-1}$
+
+:::{.callout-note collapse="true"}
+## What is the molar mass of HCl to the correct number of significant figures?
+
+36.46 g mol$^{-1}$
+
+35.45 g mol$^{-1}$ + 1.00794 g mol$^{-1}$ = ~~36.45794 g mol$^{-1}~~$
+ = 36.46 g mol$^{-1}$
+
+
+Cl has the least number of decimal places (2), so our answer should only be reported to 2 decimal places.
+:::
+
+Given we should now be in the habit of reporting our answers to the correct number of significant figures, this is no longer going to be asked in the following exercises, but we should still be concious of the number of significant figures in our answers.
+
+:::{.callout-note collapse="true"}
+## What is the molar mass of C$_2$H$_5$OH?
+
+46.064 g mol$^{-1}$
+
+Carbon's molar mass has 3 decimal places, hydrogen's molar mass has 5 decimal places and oxygen's molar mass has 4 decimal places. 
+
+In addition questions our answer should be reported to the fewest decimal places, which in this case is 3.
+:::
+
+:::{.callout-note collapse="true"}
+## What is the molar mass of C$_6$H$_{12}$O$_6$?
+
+180.158 g mol$^{-1}$
+
+Once you get used to the idea of handling signficant figures you will be able to perform your calculations, then correct your values to the correct number of significant figures when reporting.
+
+Here Carbon has 3 decimal places, so the answer should be reported to 3 decimal places, even if the value coming from a calculator would be 180.15768.
+:::
+
+:::{.callout-note collapse="true"}
+## What is the molar mass of C$_{12}$H$_8$N$_2$?
+
+180.209 g mol$^{-1}$
+
+
+Again carbon limits the number of decimal places to give in our answer.
+:::
+
+:::{.callout-note collapse="true"}
+## What is the molar mass of C$_{12}$H$_{22}$O$_{11}$?
+
+342.300 g mol$^{-1}$
+
+It is important to remember to include significant zeros if they are there. These are easy to remember because there were non zero numbers after them, but remember to write them down.
+:::
+
+
+
 ## Significant figures in multiplication and division {#sec-sfmuldiv}
 
 When multiplying or dividing values, the number of significant figures in the result should be the same as the value with the least number of significant figures in your calculation.
