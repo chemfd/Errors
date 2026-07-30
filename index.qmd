@@ -4,6 +4,35 @@ This resource is created to scaffold your learning of errors and uncertainty in 
 
 The resource is written in Markdown and has embedded questions which provide feedback. It is strongly encouraged that you start at the beginning and work through on your first use to check your learning. However you should be able to refer to sections as required when you are more familiar with the content.
 
+The resource contains a number of 'highlight blocks'.
+
+:::{.callout-tip}
+## Green blocks contain our 'rules' for handling significant figures and errors.
+
+The rules may appear as text or equations.
+:::
+
+:::{.callout-caution}
+## Orange blocks contain worked example questions.
+
+The question followed by commented worked solutions should help you clarify concepts.
+:::
+
+:::{.callout-note collapse="true"}
+## Blue blocks contain questions for you to try. Press the arrow.
+
+Blue blocks will always have the answer 'hidden' in the drop down. Please attempt questions before accessing the drop down, writing down your answer.
+
+Why? because writing it down make you commit, and if you get it wrong you will think more about why you got it wrong.
+:::
+
+:::{.callout-important}
+## Red blocks contain warnings.
+
+These may be observations about common student errors, or misconceptions.
+:::
+
+
 Chapter @sec-chapter1 
 
 * @sec-precisionaccuracy Understanding precision and accuracy.
@@ -52,6 +81,6 @@ Whilst care is taken in production of this manuscript, errors may be present. If
 
 ## Resource history
 
-
+* 30th July 2026 - Chapter 2 SAQ included.
 * 17th July 2026 - First embedded question code included, chapter 2 start.
 * 16th June 2026 - First commit of index and chapter 1.

@@ -36,9 +36,9 @@ It is easy to forget the significant zero at the end of this number as usually o
 
 :::
 
-## Exercises with addition subtraction examples.
+### Exercises with addition and subtraction examples.
 
-### Self check on our learning so far. {#sec-SelfcheckSFaddsub}
+#### Self check on our learning so far. {#sec-SelfcheckSFaddsub}
 
 ::: {.callout-note collapse="true"}
 ## What is 15.4 g + 0.16 g to the correct number of significant figures?
@@ -62,18 +62,22 @@ Now we can compare the number of decimal places in each value. -154.3 kJ mol$^{-
 
 The following are molar masses of some common elements. Use these values to answer the following questions.
 
-H = 1.00794 g mol$^{-1}$
-C = 12.011 g mol$^{-1}$
-O = 15.9994 g mol$^{-1}$
-N = 14.0067 g mol$^{-1}$
-Cl = 35.45 g mol$^{-1}$
+|| $R_A$ / g mol$^{-1}$ |
+|:---:|:------:|
+| H | 1.00794 |
+| C | 12.011 |
+| O | 15.9994 |
+| N | 14.0067 |
+| Cl | 35.45 |
+
+: A selection of atomic masses of common elements. {#tbl-atomicmassescommon}    
 
 :::{.callout-note collapse="true"}
 ## What is the molar mass of HCl to the correct number of significant figures?
 
 36.46 g mol$^{-1}$
 
-35.45 g mol$^{-1}$ + 1.00794 g mol$^{-1}$ = ~~36.45794 g mol$^{-1}~~$
+35.45 g mol$^{-1}$ + 1.00794 g mol$^{-1}$ = ~~36.45794 g mol~~$^{-1}$
  = 36.46 g mol$^{-1}$
 
 
@@ -120,6 +124,14 @@ It is important to remember to include significant zeros if they are there. Thes
 :::
 
 
+#### Self assessment question on significant figures in addition and subtraction.
+
+Please remember you can refresh this question.
+
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/210135/sig-figs-add-sub/embed/?token=504985f6-ad65-4e25-8415-4a61de7d9766" width=100% height="300"></iframe>
+```
+
 
 ## Significant figures in multiplication and division {#sec-sfmuldiv}
 
@@ -158,6 +170,7 @@ $n = 5.58 \textrm{ mol}$
 Temperature only has 3 significant figures, so our answer should be reported to 3 significant figures.
 :::
 
+
 ::: {.callout-caution title="Example of significant figures in multiplication and division - heat capacity."}
 
 - Determine the energy put into a system when a 1.000 kg block of copper is heated from 20.16 ºC to 60.52 ºC. The specific heat capacity of copper is 385 J kg$^{-1}$ K$^{-1}$.
@@ -185,7 +198,45 @@ $q = 15.5 \textrm{ kJ}$
 Note: I've changed my units to kJ to make reporting to 3 significant figures easier. If I had left my answer in J, I would have reported it as 15.5 $\times$ 10³ J, which is not as clear (and is more to type).
 :::
 
-## Significant figures in logs and lns {#sec-sflog}
+## Exercises with multiplication and division examples.
+
+### Self check on our learning so far. {#sec-SelfcheckSFmultdiv}
+
+:::{.callout-note collapse="true"}
+## If each side of a rectangle was measured to be 2.34 cm and 1.2 cm, what is the area?
+
+A = 2.8 cm$^2$
+
+The area of a rectangle is given by $A = l \times w$, so from our calculator we get a value of 2.808 cm$^2$. Since one of our sides only has 2 significant figures, using our rule of using the fewest significant figures, our answer should be reported to 2 significant figures.
+:::
+
+:::{.callout-note collapse="true"}
+## What is the volume of a cylinder with a diameter of 2.3 cm and a height of 12.4 cm?
+
+V = 52 cm$^3$
+
+On the surface this is an easy calculation following our rules of significant figures we retain the fewest significant figures in our answer, which is 2. 
+
+You might be tempted to use the radius of the circle, and 'half' the diameter, but in doing this we can get into a mess with our significant figures because we can't gain significant figures by dividing by 2. 
+
+Instead we can use the diameter directly in our calculation, $V = \frac{\pi d^2 h}{4}$ which simplifies the significant figure handling.
+
+This shows that is is often easiest to use algebraic rearrangements to avoid having to do extra calculations which may introduce complications in our consideration of significant figures.
+:::
+
+::: {.callout-note collapse="true"}
+## Determine the rate constant of diffusion, $k_d$ at 278 K, if the viscosity of the medium, $\eta$, is 1.518 mPa s, given $k_d = \frac{8RT}{3\eta}.
+
+$k_d = 4.06 \times 10^{6}$ m$^3$ s$^{-1}$ = 4.06 \times 10$^{9}$ dm$^3$ s$^{-1}$
+
+This is a more challenging question as you won't hve come across this equation before, but the principles are the same. This is a multiplication and division question, so we need to consider the number of significant figures in each value, and report our answer to the fewest number of significant figures in our calculation.
+
+The integers, 8 and 3 are exact values, so can be considered to have infinite significant figures.
+
+When values are large some poeple want to write 4 060 000 (3sf) but given our rule that if you write a digit it is significant this answer is actually 7 significant figures.
+:::
+
+## Significant figures in logarithms {#sec-sflog}
 
 Significant figures in logs and lns are a little different to the rules for addition, subtraction, multiplication and division because we have to think about the 'value' when accounting for how many significant figures we have in our answer.
 

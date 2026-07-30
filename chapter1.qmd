@@ -34,13 +34,13 @@ Instead just write your answer to the correct number of significant figures.
 
 Therefore we have to have have a way of understanding the significant figures we have, how to report them in an appropriate way, and then we will see in @sec-chapter2 how to use them in calculations.
 
-::: {.callout-note title="Why we care about significant figures."}
+###Why we care about significant figures
 Significant figures are a measure of our confidence in a value.
 
 When we have many significant figures, we are more confident in the value. When we have few significant figures, we are less confident in the value.
 
 Usually if we have any uncertaintiy in a value it is in the last significant figure we report.
-:::
+
 
 ## How many significant figures are there? {#sec-howmanysf}
 
@@ -90,7 +90,7 @@ $\Delta H =$ 124 kJ mol$^{-1}$
 :::
 
 
-# Exercise on counting signficant figures {#sec-exercise-sf}
+## Exercise on counting signficant figures {#sec-exercise-sf}
 
 
 ## Reading values {#sec-readingvalues}
