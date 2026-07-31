@@ -6,6 +6,8 @@ Now we need to learn the rules to how many significant figures we should use aft
 
 There are different rules for how we handle significant figures depending upon the type of calculation we have done. Freqently we may have more than one step in a calculation, and therefore we need to be concious of the appropriate significant figures in each step.
 
+
+
 ## Significant figures in addition and subtraction {#sec-sfaddsub}
 
 When adding or subtracting values, the number of decimal places in the result should be the same as the value with the least number of decimal places in your calculation.
@@ -62,6 +64,7 @@ Now we can compare the number of decimal places in each value. -154.3 kJ mol$^{-
 
 The following are molar masses of some common elements. Use these values to answer the following questions.
 
+
 || $R_A$ / g mol$^{-1}$ |
 |:---:|:------:|
 | H | 1.00794 |
@@ -69,6 +72,7 @@ The following are molar masses of some common elements. Use these values to answ
 | O | 15.9994 |
 | N | 14.0067 |
 | Cl | 35.45 |
+
 
 : A selection of atomic masses of common elements. {#tbl-atomicmassescommon}    
 
@@ -198,9 +202,9 @@ $q = 15.5 \textrm{ kJ}$
 Note: I've changed my units to kJ to make reporting to 3 significant figures easier. If I had left my answer in J, I would have reported it as 15.5 $\times$ 10³ J, which is not as clear (and is more to type).
 :::
 
-## Exercises with multiplication and division examples.
+### Exercises with multiplication and division examples.
 
-### Self check on our learning so far. {#sec-SelfcheckSFmultdiv}
+#### Self check on our learning so far. {#sec-SelfcheckSFmultdiv}
 
 :::{.callout-note collapse="true"}
 ## If each side of a rectangle was measured to be 2.34 cm and 1.2 cm, what is the area?
@@ -225,7 +229,7 @@ This shows that is is often easiest to use algebraic rearrangements to avoid hav
 :::
 
 ::: {.callout-note collapse="true"}
-## Determine the rate constant of diffusion, $k_d$ at 278 K, if the viscosity of the medium, $\eta$, is 1.518 mPa s, given $k_d = \frac{8RT}{3\eta}.
+## Determine the rate constant of diffusion, $k_d$ at 278 K, if the viscosity of the medium, $\eta$, is 1.518 mPa s, given $k_d = \frac{8RT}{3\eta}$.
 
 $k_d = 4.06 \times 10^{6}$ m$^3$ s$^{-1}$ = 4.06 \times 10$^{9}$ dm$^3$ s$^{-1}$
 
@@ -235,6 +239,10 @@ The integers, 8 and 3 are exact values, so can be considered to have infinite si
 
 When values are large some poeple want to write 4 060 000 (3sf) but given our rule that if you write a digit it is significant this answer is actually 7 significant figures.
 :::
+
+#### Self assessment question on significant figures in multiplication and division.
+
+Please remember you can refresh this question.
 
 ## Significant figures in logarithms {#sec-sflog}
 
@@ -267,3 +275,64 @@ You can see why we gain a significant figure when taking the log of a value grea
 The same principle works if we have very small numbers, for example $\log(0.002234)$ which we can write as $\log(2.234 \times 10^{-3}) = \log(2.234) + \log(10^{-3}) = 0.3491 - 3 = -2.6509$.
 :::
 
+
+### Exercises with logarythm examples.
+
+#### Self check on our learning so far.
+
+:::{.callout-note collapse="true"}
+## Calculate log 5.34.
+
+0.728
+
+Because 5.34 is between 1 and the base (in this case base 10) we do not gain a significant figure in our calculation.
+:::
+
+:::{.callout-note collapse="true"}
+## Calculate ln 7.156.
+
+1.9680
+
+In this case we do gain a significant figure as our value is greater than the base (in this case base e). A quick way to know if we are bigger than the base is if our calculated logarithm is greater than 1.
+:::
+
+:::{.callout-note collapse="true"}
+## Determine the pH of a 5.59 µM solution of a strong acid. You may assume the activity coefficient is 1.
+
+pH = 5.253
+
+$\textrm{pH} = -\log {\{H^+\}}$
+
+Our concentration may also be written as 5.59 $\times$ 10$^{-6}$, this value is less than 1, so we will gain a significnant figure.
+:::
+
+#### Self assessment question on significant figures with logarythms.
+
+## Significant figures in exponents - powers and roots. {#sec-sfpowers}
+
+::: {#tip-scales .callout-tip title="Significant figures with powers and roots."}
+Squaring, cubing, or rooting a value our answer should have the same number of significant figures as the value we operated on.
+:::
+
+This is easiest to think about in terms of squaring or cubing, where we can think about things in terms of multiplying values.
+
+:::{.callout-caution title="Example calculation using powers."}
+* Determine the volume of a sphere with diameter 4.52 cm.
+
+Again, I'm going to use the equation for volume with diameter. The volume of a sphere is given by: $V = \frac{4}{3}\pi r^3$, this can be written in terms of diameter, $d$, as: $V = \frac{1}{6}\pi d^3$
+
+$\pi$ is a number with 'infinite' significant figures.
+
+So in our calculation our volume will carry the same number of signifiant figures as the diameter.
+
+V = 48.4 cm$^{3}$
+
+:::
+
+If you recall, in some circumstances when taking logarythms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.
+
+::: {#tip-scales .callout-tip title="Significant figures with exponents."}
+When taking an antilog (so for example $10^x$ or $e^x$) we should retain the same number of significant figures if our exponent is between 0 and 1.
+
+If our exponent is less than 0 or greater than 1 then we should loose a significant figure.
+:::
