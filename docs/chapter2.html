@@ -191,7 +191,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#exercises-with-logarythm-examples." id="toc-exercises-with-logarythm-examples." class="nav-link" data-scroll-target="#exercises-with-logarythm-examples."><span class="header-section-number">2.3.1</span> Exercises with logarythm examples.</a></li>
   </ul></li>
-  <li><a href="#sec-sfpowers" id="toc-sec-sfpowers" class="nav-link" data-scroll-target="#sec-sfpowers"><span class="header-section-number">2.4</span> Significant figures in exponents - powers and roots.</a></li>
+  <li><a href="#sec-sfpowers" id="toc-sec-sfpowers" class="nav-link" data-scroll-target="#sec-sfpowers"><span class="header-section-number">2.4</span> Significant figures in exponents, powers and roots.</a>
+  <ul class="collapse">
+  <li><a href="#exercises-with-exponents-powers-and-roots." id="toc-exercises-with-exponents-powers-and-roots." class="nav-link" data-scroll-target="#exercises-with-exponents-powers-and-roots."><span class="header-section-number">2.4.1</span> Exercises with exponents, powers and roots.</a></li>
+  </ul></li>
+  <li><a href="#sec-sfmixed" id="toc-sec-sfmixed" class="nav-link" data-scroll-target="#sec-sfmixed"><span class="header-section-number">2.5</span> Significant figures in mixed calculations</a></li>
   </ul>
 </nav>
     </div>
@@ -672,7 +676,7 @@ Tip&nbsp;2.3: Significant figures in logs and lns.
 </section>
 </section>
 <section id="sec-sfpowers" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="sec-sfpowers"><span class="header-section-number">2.4</span> Significant figures in exponents - powers and roots.</h2>
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-sfpowers"><span class="header-section-number">2.4</span> Significant figures in exponents, powers and roots.</h2>
 <div id="tip-scales" class="callout callout-style-default callout-tip callout-titled" title="Significant figures with powers and roots.">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -687,13 +691,13 @@ Tip&nbsp;2.4: Significant figures with powers and roots.
 </div>
 </div>
 <p>This is easiest to think about in terms of squaring or cubing, where we can think about things in terms of multiplying values.</p>
-<div class="callout callout-style-default callout-caution callout-titled" title="Example calculation using powers.">
+<div class="callout callout-style-default callout-caution callout-titled" title="Example of significant figures in powers - volume.">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Example calculation using powers.
+<span class="screen-reader-only">Caution</span>Example of significant figures in powers - volume.
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -706,6 +710,7 @@ Tip&nbsp;2.4: Significant figures with powers and roots.
 <p>V = 48.4 cm<span class="math inline">\(^{3}\)</span></p>
 </div>
 </div>
+<p>This principle stands with any power, be it integers, fractions (square and cube roots), or negative powers. The number of significant figures in our answer should be the same as the number of significant figures in the value we are operating on.</p>
 <p>If you recall, in some circumstances when taking logarythms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.</p>
 <div id="tip-scales" class="callout callout-style-default callout-tip callout-titled" title="Significant figures with exponents.">
 <div class="callout-header d-flex align-content-center">
@@ -717,9 +722,211 @@ Tip&nbsp;2.5: Significant figures with exponents.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>When taking an antilog (so for example <span class="math inline">\(10^x\)</span> or <span class="math inline">\(e^x\)</span>) we should retain the same number of significant figures if our exponent is between 0 and 1.</p>
-<p>If our exponent is less than 0 or greater than 1 then we should loose a significant figure.</p>
+<p>When taking an antilog (so for example <span class="math inline">\(10^x\)</span> or <span class="math inline">\(e^x\)</span>) we should retain the same number of significant figures if our exponent is between -1 and 1.</p>
+<p>If our exponent is less than -1 or greater than 1 then we should loose a significant figure.</p>
 </div>
+</div>
+<p>Why is the rule between -1 and 1?</p>
+<p>This is because we can write negative exponents as positive exponents in a fraction, so <span class="math inline">\(e^{-x} = \frac{1}{e^x}\)</span>.</p>
+<p>For ease this first example is ‘undoing’ one of our examples from <a href="#sec-sflog" class="quarto-xref"><span>Section 2.3</span></a>.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Example of significant figures exponents.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Example of significant figures exponents.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Determine <span class="math inline">\(10^{0.3491.}\)</span> and <span class="math inline">\(10^{1.3491}\)</span> to the correct number of significant figures.</p>
+<p>This is the type of question you see if calculating activity from pH.</p>
+<p>For our first example <span class="math inline">\(10^{0.3491}\)</span> our exponent is between 0 and 1, so we should retain the same number of significant figures in our answer.</p>
+<p><span class="math inline">\(10^{0.3491} = 2.234\)</span></p>
+<p>However, for our second example <span class="math inline">\(10^{1.3491}\)</span> our exponent is greater than 1, so we should loose a significant figure in our answer, so 5 significant figures in our exponent gives us 4 significant figures in our answer.</p>
+<p><span class="math inline">\(10^{1.3491} = 22.34\)</span></p>
+</div>
+</div>
+<section id="exercises-with-exponents-powers-and-roots." class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="exercises-with-exponents-powers-and-roots."><span class="header-section-number">2.4.1</span> Exercises with exponents, powers and roots.</h3>
+<section id="sec-SelfcheckSFpowers" class="level4" data-number="2.4.1.1">
+<h4 data-number="2.4.1.1" class="anchored" data-anchor-id="sec-SelfcheckSFpowers"><span class="header-section-number">2.4.1.1</span> Self check on our learning so far.</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Calculate <span class="math inline">\(e^{0.728}\)</span>.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>2.07</p>
+<p>Because our power is between 0 and 1, we should retain the same number of significant figures in our answer.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-SelfcheckSFpowers" class="level4" data-number="2.4.1.2">
+<h4 data-number="2.4.1.2" class="anchored" data-anchor-id="sec-SelfcheckSFpowers"><span class="header-section-number">2.4.1.2</span> Self check on our learning so far.</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Calculate <span class="math inline">\(e^{-0.38}\)</span>.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>0.68</p>
+<p>Because our power is between -1 and 1, we should retain the same number of significant figures in our answer.</p>
+<p>Rembember when we have a negative exponent we can write it as a positive exponent in a fraction, so <span class="math inline">\(e^{-0.38} = \frac{1}{e^{0.38}}\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Calculate <span class="math inline">\(10^{4.5718}\)</span>.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>37.31 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^3\)</span></p>
+<p>This is one of the cases where our exponent is greater than 1, so we should loose a significant figure in our answer, so 5 significant figures in our exponent gives us 4 significant figures in our answer.</p>
+<p>Because writing our answer as 37310 would contain 5 significant figures, (even if we think we’ve rounded it to 4 significant figures) we need to write our answer in scientific notation to show that we have 4 significant figures in our answer.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Calculate <span class="math inline">\(10^{-6.18}\)</span>.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>6.6 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^{-7}\)</span></p>
+<p>This is one of the cases where our exponent is less than -1, so we should loose a significant figure in our answer, so 3 significant figures in our exponent gives us 2 significant figures in our answer.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Calculate 10<span class="math inline">\(^0.477\)</span>.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>3.0</p>
+<p>We have lost a significant figure, but we need to remember to include the significant zero in our answer.</p>
+</div>
+</div>
+</div>
+<p>Now a chemistry example</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the activity of H<span class="math inline">\(^+\)</span> in a solution with pH = 5.25.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\{\textrm{H}^+\} = 5.6 \times 10^{-6}\)</span></p>
+<p>Recall that <span class="math inline">\(\textrm{pH} = -\log \{H^+\}\)</span>, so we can rearrange this to give us <span class="math inline">\(\{H^+\} = 10^{-\textrm{pH}}\)</span>.</p>
+<p>We have a negative exponent, and it is less than -1, so we should loose a significant figure in our answer, so 3 significant figures in our exponent gives us 2 significant figures in our answer.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="sec-sfmixed" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-sfmixed"><span class="header-section-number">2.5</span> Significant figures in mixed calculations</h2>
+<p>Many calculations we see in chemistry involve a mixture of different mathematical operators, which you have learned to handle in school using the rule of BODMAS/BIDMAS (Brackets, Order/Indices, Division and Multiplication, Addition and Subtraction).</p>
+<div id="tip-scales" class="callout callout-style-default callout-tip callout-titled" title="Significant figures in mixed calculations.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;2.6: Significant figures in mixed calculations.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When we have a mixed calculation we need to follow the appropriate number of significant figures appropriate in a stepwise (BIDMAS/BODMAS) manner, and then report our final answer to the appropriate number of significant figures.</p>
+</div>
+</div>
+<p>When we have a mixed calculation we need to follow the appropriate number of significant figures appropriate in a stepwise manner, and then report our final answer to the appropriate number of significant figures.</p>
+<p>Practically we do not ‘round’ our answer at each step, (because of the probability of making an error in our input) and only round our final answer to the appropriate number of significant figures.</p>
+<p>Common examples of mixed calculations in chemistry involve temperature, where the conversion between Celsius and Kelvin is frequently used. Thermodynamics also gives us <span class="math inline">\(\Delta G = \Delta H - T \Delta S\)</span>, further kinetics calculations frequently involve both multiplication and either logs or powers.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Examples of significant figures in mixed calculations.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Examples of significant figures in mixed calculations.
+</div>
+</div>
+<section id="determine-the-change-in-gibbs-free-energy-delta-g-for-a-reaction-at-25-k-if-delta-h--84.3-kj-mol-1-and-delta-s-0.164-kj-k-1-mol-1." class="level2 callout-body-container callout-body" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="determine-the-change-in-gibbs-free-energy-delta-g-for-a-reaction-at-25-k-if-delta-h--84.3-kj-mol-1-and-delta-s-0.164-kj-k-1-mol-1."><span class="header-section-number">2.6</span> Determine the change in Gibbs free energy, <span class="math inline">\(\Delta G\)</span>, for a reaction at 25 K, if <span class="math inline">\(\Delta H = -84.3\)</span> kJ mol<span class="math inline">\(^{-1}\)</span> and <span class="math inline">\(\Delta S = 0.164\)</span> kJ K<span class="math inline">\(^{-1}\)</span> mol<span class="math inline">\(^{-1}\)</span>.</h2>
+<p><span class="math inline">\(\Delta G = \Delta H - T \Delta S\)</span></p>
+<p>The first step we have to do here is to calculate <span class="math inline">\(T\)</span> in K. Although this isn’t formally in a bracket, we need to do this first to get our temperature in the correct units. This is an addition calculation, so we need to consider the number of decimal places in our answer.</p>
+<p>So <span class="math inline">\(T\)</span> = 25 ºC + 273.15 K = 298 K (we should be considering this value to have 3 sig figs).</p>
+<p>The next step is to calculate <span class="math inline">\(T \Delta S\)</span>. This is a multiplication calculation, so we need to consider the number of significant figures in our answer.</p>
+<p>So <span class="math inline">\(T \Delta S = 298 \textrm{ K} \times 0.164 \textrm{ kJ K}^{-1} \textrm{ mol}^{-1} = 48.9 \textrm{ kJ mol}^{-1}\)</span></p>
+<p>The final step is to calculate <span class="math inline">\(\Delta G = \Delta H - T \Delta S\)</span>. This is a subtraction calculation, so we need to consider the number of decimal places in our answer.</p>
+<p>So <span class="math inline">\(\Delta G = -84.3 \textrm{ kJ mol}^{-1} - (48.9 \textrm{ kJ mol}^{-1}) = -133.2 \textrm{ kJ mol}^{-1}\)</span></p>
+<p>This is potentially a confusing result if you don’t have a good understanding of significant figures, as the final answer has more significant figures than the values we used in our calculation.</p>
+</section>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled" title="Examples of significant figures in mixed calculations.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Examples of significant figures in mixed calculations.
+</div>
+</div>
+<section id="determine-the-rate-constant-for-the-first-order-reaction-where-the-initial-concentration-of-the-reactant-is-0.100-m-the-final-concentration-of-the-reactant-is-0.127-m-and-the-time-taken-for-this-change-is-70-minutes." class="level2 callout-body-container callout-body" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="determine-the-rate-constant-for-the-first-order-reaction-where-the-initial-concentration-of-the-reactant-is-0.100-m-the-final-concentration-of-the-reactant-is-0.127-m-and-the-time-taken-for-this-change-is-70-minutes."><span class="header-section-number">2.7</span> Determine the rate constant for the first order reaction where the initial concentration of the reactant is 0.100 M, the final concentration of the reactant is 0.127 M and the time taken for this change is 70 minutes.</h2>
+<p>If it is a first order reaction, then we can use the equation:</p>
+<p><span class="math inline">\([A] = [A]_0 e^{-kt}\)</span></p>
+<p>which we can rearrange to give us:</p>
+<p><span class="math inline">\(k = \frac{1}{t} \ln \frac{[A]_0}{[A]}\)</span></p>
+<p>The first step is to calculate the ratio of the initial and final concentrations. This is a division calculation, so we need to consider the number of significant figures in our answer.</p>
+<p><span class="math inline">\(\frac{[A]_0}{[A]} = \frac{0.100 \textrm{ M}}{0.127 \textrm{ M}} = 0.787\)</span></p>
+<p>The next step is to calculate the natural log of this value. This is a log calculation, so we need to consider the number of significant figures in our answer.</p>
+<p><span class="math inline">\(\ln \frac{[A]_0}{[A]} = \ln(0.787) = -0.2395\)</span></p>
+<p>In this case we are taking the log of a value less than 1 so we should gain a significant figure, so our answer has 4 significant figures.</p>
+<p>The final step is to calculate the rate constant <span class="math inline">\(k\)</span>. This is a multiplication calculation, so we need to consider the number of significant figures in our answer.</p>
+<p><span class="math inline">\(k = \frac{1}{t} \ln \frac{[A]_0}{[A]} = \frac{1}{70 \textrm{ min}} \times (-0.240) = -0.0034 \textrm{ min}^{-1}\)</span></p>
+<p>Here our time, <span class="math inline">\(t\)</span>, has the fewest significant figures, so our answer should be reported to just 2 significant figures.</p>
+</section>
 </div>
 
 

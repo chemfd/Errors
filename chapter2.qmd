@@ -308,7 +308,7 @@ Our concentration may also be written as 5.59 $\times$ 10$^{-6}$, this value is 
 
 #### Self assessment question on significant figures with logarythms.
 
-## Significant figures in exponents - powers and roots. {#sec-sfpowers}
+## Significant figures in exponents, powers and roots. {#sec-sfpowers}
 
 ::: {#tip-scales .callout-tip title="Significant figures with powers and roots."}
 Squaring, cubing, or rooting a value our answer should have the same number of significant figures as the value we operated on.
@@ -316,7 +316,7 @@ Squaring, cubing, or rooting a value our answer should have the same number of s
 
 This is easiest to think about in terms of squaring or cubing, where we can think about things in terms of multiplying values.
 
-:::{.callout-caution title="Example calculation using powers."}
+:::{.callout-caution title="Example of significant figures in powers - volume."}
 * Determine the volume of a sphere with diameter 4.52 cm.
 
 Again, I'm going to use the equation for volume with diameter. The volume of a sphere is given by: $V = \frac{4}{3}\pi r^3$, this can be written in terms of diameter, $d$, as: $V = \frac{1}{6}\pi d^3$
@@ -329,10 +329,161 @@ V = 48.4 cm$^{3}$
 
 :::
 
+This principle stands with any power, be it integers, fractions (square and cube roots), or negative powers. The number of significant figures in our answer should be the same as the number of significant figures in the value we are operating on.
+
 If you recall, in some circumstances when taking logarythms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.
 
 ::: {#tip-scales .callout-tip title="Significant figures with exponents."}
-When taking an antilog (so for example $10^x$ or $e^x$) we should retain the same number of significant figures if our exponent is between 0 and 1.
+When taking an antilog (so for example $10^x$ or $e^x$) we should retain the same number of significant figures if our exponent is between -1 and 1.
 
-If our exponent is less than 0 or greater than 1 then we should loose a significant figure.
+If our exponent is less than -1 or greater than 1 then we should loose a significant figure.
+:::
+
+Why is the rule between -1 and 1?
+
+This is because we can write negative exponents as positive exponents in a fraction, so $e^{-x} = \frac{1}{e^x}$.
+
+For ease this first example is 'undoing' one of our examples from @sec-sflog.
+
+::: {.callout-caution title="Example of significant figures exponents."}
+
+Determine $10^{0.3491.}$ and  $10^{1.3491}$ to the correct number of significant figures.
+
+This is the type of question you see if calculating activity from pH.
+
+For our first example $10^{0.3491}$ our exponent is between 0 and 1, so we should retain the same number of significant figures in our answer.
+
+$10^{0.3491} = 2.234$
+
+However, for our second example $10^{1.3491}$ our exponent is greater than 1, so we should loose a significant figure in our answer, so 5 significant figures in our exponent gives us 4 significant figures in our answer.
+
+$10^{1.3491} = 22.34$
+:::
+
+
+### Exercises with exponents, powers and roots.
+
+#### Self check on our learning so far. {#sec-SelfcheckSFpowers}
+
+:::{.callout-note collapse="true"}
+## Calculate $e^{0.728}$.
+
+2.07
+
+Because our power is between 0 and 1, we should retain the same number of significant figures in our answer.
+:::
+
+#### Self check on our learning so far. {#sec-SelfcheckSFpowers}
+
+:::{.callout-note collapse="true"}
+## Calculate $e^{-0.38}$.
+
+0.68 
+
+Because our power is between -1 and 1, we should retain the same number of significant figures in our answer.
+
+Rembember when we have a negative exponent we can write it as a positive exponent in a fraction, so $e^{-0.38} = \frac{1}{e^{0.38}}$.
+:::
+
+:::{.callout-note collapse="true"}
+## Calculate $10^{4.5718}$.
+
+37.31 $\times$ 10$^3$  
+
+This is one of the cases where our exponent is greater than 1, so we should loose a significant figure in our answer, so 5 significant figures in our exponent gives us 4 significant figures in our answer.
+
+Because writing our answer as 37310 would contain 5 significant figures, (even if we think we've rounded it to 4 significant figures) we need to write our answer in scientific notation to show that we have 4 significant figures in our answer.
+:::
+
+:::{.callout-note collapse="true"}
+## Calculate $10^{-6.18}$.
+
+6.6 $\times$ 10$^{-7}$
+
+This is one of the cases where our exponent is less than -1, so we should loose a significant figure in our answer, so 3 significant figures in our exponent gives us 2 significant figures in our answer.
+:::
+
+:::{.callout-note collapse="true"}
+## Calculate 10$^0.477$.
+
+3.0
+
+We have lost a significant figure, but we need to remember to include the significant zero in our answer.
+:::
+
+Now a chemistry example
+
+:::{.callout-note collapse="true"}
+## Determine the activity of H$^+$ in a solution with pH = 5.25.
+
+$\{\textrm{H}^+\} = 5.6 \times 10^{-6}$
+
+Recall that $\textrm{pH} = -\log \{H^+\}$, so we can rearrange this to give us $\{H^+\} = 10^{-\textrm{pH}}$.
+
+We have a negative exponent, and it is less than -1, so we should loose a significant figure in our answer, so 3 significant figures in our exponent gives us 2 significant figures in our answer.
+
+:::
+
+## Significant figures in mixed calculations {#sec-sfmixed}
+
+Many calculations we see in chemistry involve a mixture of different mathematical operators, which you have learned to handle in school using the rule of BODMAS/BIDMAS (Brackets, Order/Indices, Division and Multiplication, Addition and Subtraction).
+
+::: {#tip-scales .callout-tip title="Significant figures in mixed calculations."}
+When we have a mixed calculation we need to follow the appropriate number of significant figures appropriate in a stepwise (BIDMAS/BODMAS) manner, and then report our final answer to the appropriate number of significant figures.
+
+:::
+
+When we have a mixed calculation we need to follow the appropriate number of significant figures appropriate in a stepwise manner, and then report our final answer to the appropriate number of significant figures.
+
+Practically we do not 'round' our answer at each step, (because of the probability of making an error in our input) and only round our final answer to the appropriate number of significant figures.
+
+Common examples of mixed calculations in chemistry involve temperature, where the conversion between Celsius and Kelvin is frequently used. Thermodynamics also gives us $\Delta G = \Delta H - T \Delta S$, further kinetics calculations frequently involve both multiplication and either logs or powers.
+
+
+::: {.callout-caution title="Examples of significant figures in mixed calculations."}
+## Determine the change in Gibbs free energy, $\Delta G$, for a reaction at 25 K, if $\Delta H = -84.3$ kJ mol$^{-1}$ and $\Delta S = 0.164$ kJ K$^{-1}$ mol$^{-1}$.
+
+$\Delta G = \Delta H - T \Delta S$
+
+The first step we have to do here is to calculate $T$ in K. Although this isn't formally in a bracket, we need to do this first to get our temperature in the correct units. This is an addition calculation, so we need to consider the number of decimal places in our answer.
+
+So $T$ = 25 ºC + 273.15 K = 298 K (we should be considering this value to have 3 sig figs).
+
+The next step is to calculate $T \Delta S$. This is a multiplication calculation, so we need to consider the number of significant figures in our answer.
+
+So $T \Delta S = 298 \textrm{ K} \times 0.164 \textrm{ kJ K}^{-1} \textrm{ mol}^{-1} = 48.9 \textrm{ kJ mol}^{-1}$
+
+The final step is to calculate $\Delta G = \Delta H - T \Delta S$. This is a subtraction calculation, so we need to consider the number of decimal places in our answer.
+
+So $\Delta G = -84.3 \textrm{ kJ mol}^{-1} - (48.9 \textrm{ kJ mol}^{-1}) = -133.2 \textrm{ kJ mol}^{-1}$
+
+This is potentially a confusing result if you don't have a good understanding of significant figures, as the final answer has more significant figures than the values we used in our calculation.
+:::
+
+::: {.callout-caution title="Examples of significant figures in mixed calculations."}
+## Determine the rate constant for the first order reaction where the initial concentration of the reactant is 0.100 M, the final concentration of the reactant is 0.127 M and the time taken for this change is 70 minutes.
+
+If it is a first order reaction, then we can use the equation:
+
+$[A] = [A]_0 e^{-kt}$
+
+which we can rearrange to give us:
+
+$k = \frac{1}{t} \ln \frac{[A]_0}{[A]}$
+
+The first step is to calculate the ratio of the initial and final concentrations. This is a division calculation, so we need to consider the number of significant figures in our answer.
+
+$\frac{[A]_0}{[A]} = \frac{0.100 \textrm{ M}}{0.127 \textrm{ M}} = 0.787$
+
+The next step is to calculate the natural log of this value. This is a log calculation, so we need to consider the number of significant figures in our answer.
+
+$\ln \frac{[A]_0}{[A]} = \ln(0.787) = -0.2395$
+
+In this case we are taking the log of a value less than 1 so we should gain a significant figure, so our answer has 4 significant figures.
+
+The final step is to calculate the rate constant $k$. This is a multiplication calculation, so we need to consider the number of significant figures in our answer.
+
+$k = \frac{1}{t} \ln \frac{[A]_0}{[A]} = \frac{1}{70 \textrm{ min}} \times (-0.240) = -0.0034 \textrm{ min}^{-1}$
+
+Here our time, $t$, has the fewest significant figures, so our answer should be reported to just 2 significant figures.
 :::
