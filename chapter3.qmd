@@ -1,6 +1,6 @@
-# The use of the standard error. {#sec-chapter2}
+# Averages and standard deviation. {#sec-chapter3}
 
-In @sec-chapter1 said that the number of significant figures was a measure of the confidence we have in our value, but we can calculate a value for that confidence, which we call the standard error, from the spread of the data.
+You are likely familiar with the concept of averages, and you may have heard of the standard deviation. In this chapter we will look at how to calculate averages and standard deviations, and how to report them to the appropriate number of significant figures.
 
 It is important to remember that all data has a spread, we do not expect every measurement to be exactly the same no matter how careful we are. The spread of the data is a measure of the uncertainty in our measurements, and we can use that to calculate the standard error.
 
@@ -8,7 +8,86 @@ It is important to remember that all data has a spread, we do not expect every m
 
 Your data being 'far' from the mean isn't a bad thing, it just means that you have collected  data that falls within the expected spread of the data. This distrubtion of data is why, as scientists, we take multiple measurements of the same thing. We want to be sure that our data is representative of the true value.
 
+It is also why we take many measurements of the same thing, and then calculate an average value. The average value is a better representation of the true value than any single measurement.
+
+
 You will notice from @fig-dataspread that the data points are symmetrically distributed around the mean. This is what we expect to see in Gaussian (sometimes called normal) distribution of data, you will likely have seen this distrubtion in school, or be familiar with the concept of standard deviation. When we calculate a standard deviation (and later a standard error) we are assuming that our data is normally distributed, and that the mean is a good representation of the data.
+
+## Averages and the mean {#sec-averages}
+
+### The mean {#sec-mean}
+
+There are different types of average, but the one we are interested in, and the one you are probably most familiar with, is the mean. The mean is calculated by adding all the values together and dividing by the number of values.
+
+:::{#tip-mean .callout-tip title="Calculating the mean."}
+$\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}$
+:::
+
+* When calculating the mean using Excel you can use the function '=AVERAGE()' to calculate the mean of a set of values.
+
+* When calculating the mean using Python, you can use the `statistics.mean()`  or `numpy.mean()` function, after importing the necessary libraries.
+
+When we calculate the mean we need to remember the rules for significant figures from @sec-chapter2. The mean is a calculated value, and therefore the number of significant figures in the mean is determined by the number of significant figures in the values we are averaging.
+
+::: {.callout-caution title="Calculating the mean of a set of data."}
+Determine the mean of the following set of data: $\Delta T$ / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49
+
+$\bar {\Delta T} = 10.45$ K
+
+$\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}$
+
+here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$
+
+$\bar {\Delta T} = \frac{73.15}{7} = 10.45$ K
+
+:::
+
+
+
+### The mid-range {#sec-midrange}
+
+The mid-range is another type of average, which can be calculated very quickly to give you an estimate of the average value. 
+
+:::{#tip-midrange .callout-tip title="Calculating the mid-range."}
+$\text{Mid-range} = \frac{\text{Max value} + \text{Min value}}{2}$
+:::
+
+
+Like the mean our confidence in the mid-range increases with the number of data points we have collected. If we collect a large amount of data, the mid-range will be a good estimate of the mean. However if we have only collected a small amount of data, the mid-range will likely not be a good estimate of the mean.
+
+Also like the mean, we cannot gain significant figures during our calculation.
+
+In practice we don't use the mid-range very often, but it is a quick way to get an estimate of the mean value of a set of data in the lab.
+
+::: {.callout-caution title="Calculating the mid-range of a set of data."}
+Determine the mid-range of the following set of data: $\Delta T$ / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49
+
+Aligning the data in increasing order we have: 
+
+$\Delta T$ / K : 10.33, 10.33, 10.41, 10.42, 10.49, 10.57, 10.60
+
+$\text{Mid-range} = \frac{\text{Max value} + \text{Min value}}{2}$
+
+$\Delta T_{\textrm{Mid-range}} = \frac{10.60 + 10.33}{2} = 10.46$ K
+
+Here we have to maintain the number of significant figures in our calculation, so we report the mid-range to 2 decimal places, the same as the data we are using to calculate it. The answer has then been rounded to even.
+
+:::
+
+
+### Exercises calculating the mean and mid-range.
+
+#### Self check on our learning so far. 
+
+:::{.callout-note collapse="true"}
+
+:::
+
+
+#### Self assessment questions on mean and mid-range.
+
+
+
 
 ## The standard deviation. {#sec-standarddeviation}
 

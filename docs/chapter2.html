@@ -160,7 +160,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">chapter3.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Averages and standard deviation.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -591,7 +591,7 @@ Tip&nbsp;2.3: Significant figures in logs and lns.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 1 and the base then we do not gain a significant figure.</p>
+<p>When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 0 and the base then we do not gain a significant figure.</p>
 </div>
 </div>
 <p>Practically what does this mean? and why the do we sometimes gain a significant figure? The following example using <span class="math inline">\(\log_{10}\)</span> will help to explain this.</p>
@@ -987,7 +987,7 @@ Tip&nbsp;2.6: Significant figures in mixed calculations.
 </div>
 </div>
 </div>
-<p><span class="math inline">\(E = E^0 - \frac{RT}{nF} \log \frac{\{\text{products}\}}{\{\text{reactants}\}}\)</span></p>
+<p><span class="math inline">\(E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}}\)</span></p>
 <p>Recall - values in curly brackets are activities.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
@@ -1001,8 +1001,19 @@ Tip&nbsp;2.6: Significant figures in mixed calculations.
 </div>
 <div id="callout-36" class="callout-36-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p><span class="math inline">\(V = 1.022\)</span> V</p>
 <p>First we need to deal with the ‘implied’ brackets:</p>
-<p><span class="math inline">\(\frac{\{\text{products}\}}{\{\text{reactants}\}}\)</span></p>
+<p><span class="math inline">\(\frac{\{\text{products}\}}{\{\text{reactants}\}} = \frac{0.563}{1.263} = 0.446\)</span></p>
+<p>Three significant figures in our answer because our fewest significant figures in our calculation is 3.</p>
+<p><span class="math inline">\(T = 20 ºC + 273.15 K = 293.15 K\)</span></p>
+<p>The temperature in the question is described as “exactly” 20 ºC, so we can consider this to have infinite significant figures. Therefore our temperature in Kelvin will also have infinite significant figures.</p>
+<p>The next highest priority operation is the log:</p>
+<p><span class="math inline">\(\ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = \ln(0.446) = -0.807\)</span>.</p>
+<p>The value we are taking the log of is between 0 and the base, so we do not gain a significant figure in our answer.</p>
+<p>The next highest priority operation is the multiplication/division:</p>
+<p><span class="math inline">\(\frac{RT}{nF}\ln \frac{\{\text{products}\}}{\{\text{reactants}\}}  = \frac{8.31447 \textrm{ J K}^{-1} \textrm{ mol}^{-1} \times 293.15 \textrm{ K}}{2 \times 96485 \textrm{ C mol}^{-1}} \times (-0.807) = -0.0102\)</span> V</p>
+<p>The final step is to calculate the cell potential, <span class="math inline">\(E\)</span>. This is a subtraction calculation, so we need to consider the number of decimal places in our answer.</p>
+<p><span class="math inline">\(E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = 1.012 \textrm{ V} - (-0.0102 \textrm{ V}) = 1.022 \textrm{ V}\)</span></p>
 </div>
 </div>
 </div>
@@ -1423,8 +1434,8 @@ Tip&nbsp;2.6: Significant figures in mixed calculations.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter3.html" class="pagination-link" aria-label="chapter3.html">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">chapter3.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter3.html" class="pagination-link" aria-label="Averages and standard deviation.">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Averages and standard deviation.</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

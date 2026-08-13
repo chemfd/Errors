@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; The use of the standard error. – An Introduction to Errors and Error Analysis</title>
+<title>3&nbsp; Averages and standard deviation. – An Introduction to Errors and Error Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The use of the standard error.</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Averages and standard deviation.</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The use of the standard error.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Averages and standard deviation.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,7 +179,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-standarddeviation" id="toc-sec-standarddeviation" class="nav-link active" data-scroll-target="#sec-standarddeviation"><span class="header-section-number">3.1</span> The standard deviation.</a></li>
+  <li><a href="#sec-averages" id="toc-sec-averages" class="nav-link active" data-scroll-target="#sec-averages"><span class="header-section-number">3.1</span> Averages and the mean</a>
+  <ul class="collapse">
+  <li><a href="#sec-mean" id="toc-sec-mean" class="nav-link" data-scroll-target="#sec-mean"><span class="header-section-number">3.1.1</span> The mean</a></li>
+  <li><a href="#sec-midrange" id="toc-sec-midrange" class="nav-link" data-scroll-target="#sec-midrange"><span class="header-section-number">3.1.2</span> The mid-range</a></li>
+  <li><a href="#exercises-calculating-the-mean-and-mid-range." id="toc-exercises-calculating-the-mean-and-mid-range." class="nav-link" data-scroll-target="#exercises-calculating-the-mean-and-mid-range."><span class="header-section-number">3.1.3</span> Exercises calculating the mean and mid-range.</a></li>
+  </ul></li>
+  <li><a href="#sec-standarddeviation" id="toc-sec-standarddeviation" class="nav-link" data-scroll-target="#sec-standarddeviation"><span class="header-section-number">3.2</span> The standard deviation.</a></li>
   </ul>
 </nav>
     </div>
@@ -159,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-chapter2" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The use of the standard error.</span></span></h1>
+<h1 class="title"><span id="sec-chapter3" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Averages and standard deviation.</span></span></h1>
 </div>
 
 
@@ -176,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In <a href="chapter1.html" class="quarto-xref"><span>Chapter 1</span></a> said that the number of significant figures was a measure of the confidence we have in our value, but we can calculate a value for that confidence, which we call the standard error, from the spread of the data.</p>
+<p>You are likely familiar with the concept of averages, and you may have heard of the standard deviation. In this chapter we will look at how to calculate averages and standard deviations, and how to report them to the appropriate number of significant figures.</p>
 <p>It is important to remember that all data has a spread, we do not expect every measurement to be exactly the same no matter how careful we are. The spread of the data is a measure of the uncertainty in our measurements, and we can use that to calculate the standard error.</p>
 <div id="fig-dataspread" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing the spread of data where the data points are distributed around the mean.">
 <figure class="quarto-float quarto-float-fig figure">
@@ -189,9 +224,115 @@ Figure&nbsp;3.1: The spread of data.
 </figure>
 </div>
 <p>Your data being ‘far’ from the mean isn’t a bad thing, it just means that you have collected data that falls within the expected spread of the data. This distrubtion of data is why, as scientists, we take multiple measurements of the same thing. We want to be sure that our data is representative of the true value.</p>
+<p>It is also why we take many measurements of the same thing, and then calculate an average value. The average value is a better representation of the true value than any single measurement.</p>
 <p>You will notice from <a href="#fig-dataspread" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> that the data points are symmetrically distributed around the mean. This is what we expect to see in Gaussian (sometimes called normal) distribution of data, you will likely have seen this distrubtion in school, or be familiar with the concept of standard deviation. When we calculate a standard deviation (and later a standard error) we are assuming that our data is normally distributed, and that the mean is a good representation of the data.</p>
-<section id="sec-standarddeviation" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="sec-standarddeviation"><span class="header-section-number">3.1</span> The standard deviation.</h2>
+<section id="sec-averages" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-averages"><span class="header-section-number">3.1</span> Averages and the mean</h2>
+<section id="sec-mean" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="sec-mean"><span class="header-section-number">3.1.1</span> The mean</h3>
+<p>There are different types of average, but the one we are interested in, and the one you are probably most familiar with, is the mean. The mean is calculated by adding all the values together and dividing by the number of values.</p>
+<div id="tip-mean" class="callout callout-style-default callout-tip callout-titled" title="Calculating the mean.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;3.1: Calculating the mean.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}\)</span></p>
+</div>
+</div>
+<ul>
+<li><p>When calculating the mean using Excel you can use the function ‘=AVERAGE()’ to calculate the mean of a set of values.</p></li>
+<li><p>When calculating the mean using Python, you can use the <code>statistics.mean()</code> or <code>numpy.mean()</code> function, after importing the necessary libraries.</p></li>
+</ul>
+<p>When we calculate the mean we need to remember the rules for significant figures from <a href="chapter2.html" class="quarto-xref"><span>Chapter 2</span></a>. The mean is a calculated value, and therefore the number of significant figures in the mean is determined by the number of significant figures in the values we are averaging.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Calculating the mean of a set of data.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Calculating the mean of a set of data.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Determine the mean of the following set of data: <span class="math inline">\(\Delta T\)</span> / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49</p>
+<p><span class="math inline">\(\bar {\Delta T} = 10.45\)</span> K</p>
+<p><span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}\)</span></p>
+<p>here N = 7, and <span class="math inline">\(\sum_{i=1}^{N} x_i = 73.15\)</span></p>
+<p><span class="math inline">\(\bar {\Delta T} = \frac{73.15}{7} = 10.45\)</span> K</p>
+</div>
+</div>
+</section>
+<section id="sec-midrange" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="sec-midrange"><span class="header-section-number">3.1.2</span> The mid-range</h3>
+<p>The mid-range is another type of average, which can be calculated very quickly to give you an estimate of the average value.</p>
+<div id="tip-midrange" class="callout callout-style-default callout-tip callout-titled" title="Calculating the mid-range.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;3.2: Calculating the mid-range.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\text{Mid-range} = \frac{\text{Max value} + \text{Min value}}{2}\)</span></p>
+</div>
+</div>
+<p>Like the mean our confidence in the mid-range increases with the number of data points we have collected. If we collect a large amount of data, the mid-range will be a good estimate of the mean. However if we have only collected a small amount of data, the mid-range will likely not be a good estimate of the mean.</p>
+<p>Also like the mean, we cannot gain significant figures during our calculation.</p>
+<p>In practice we don’t use the mid-range very often, but it is a quick way to get an estimate of the mean value of a set of data in the lab.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Calculating the mid-range of a set of data.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Calculating the mid-range of a set of data.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Determine the mid-range of the following set of data: <span class="math inline">\(\Delta T\)</span> / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49</p>
+<p>Aligning the data in increasing order we have:</p>
+<p><span class="math inline">\(\Delta T\)</span> / K : 10.33, 10.33, 10.41, 10.42, 10.49, 10.57, 10.60</p>
+<p><span class="math inline">\(\text{Mid-range} = \frac{\text{Max value} + \text{Min value}}{2}\)</span></p>
+<p><span class="math inline">\(\Delta T_{\textrm{Mid-range}} = \frac{10.60 + 10.33}{2} = 10.46\)</span> K</p>
+<p>Here we have to maintain the number of significant figures in our calculation, so we report the mid-range to 2 decimal places, the same as the data we are using to calculate it. The answer has then been rounded to even.</p>
+</div>
+</div>
+</section>
+<section id="exercises-calculating-the-mean-and-mid-range." class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="exercises-calculating-the-mean-and-mid-range."><span class="header-section-number">3.1.3</span> Exercises calculating the mean and mid-range.</h3>
+<section id="self-check-on-our-learning-so-far." class="level4" data-number="3.1.3.1">
+<h4 data-number="3.1.3.1" class="anchored" data-anchor-id="self-check-on-our-learning-so-far."><span class="header-section-number">3.1.3.1</span> Self check on our learning so far.</h4>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+<section id="self-assessment-questions-on-mean-and-mid-range." class="level4" data-number="3.1.3.2">
+<h4 data-number="3.1.3.2" class="anchored" data-anchor-id="self-assessment-questions-on-mean-and-mid-range."><span class="header-section-number">3.1.3.2</span> Self assessment questions on mean and mid-range.</h4>
+</section>
+</section>
+</section>
+<section id="sec-standarddeviation" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-standarddeviation"><span class="header-section-number">3.2</span> The standard deviation.</h2>
 <p>Our Gaussian distribution has a maximum at the mean and a symmetrical distribution around the mean.</p>
 <div id="fig-gaussian" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
@@ -253,6 +394,37 @@ Figure&nbsp;3.1: The spread of data.
 Figure&nbsp;3.2: The Gaussian distribution and distribution of data described by the standard deviation.
 </figcaption>
 </figure>
+</div>
+<p>When our data is precise our standard deviation is small.</p>
+<p>The standard deviation is a measure of the spread of the data, and therefore a measure of the uncertainty in our measurements. This can be seen in <a href="#fig-sdspread" class="quarto-xref">Figure&nbsp;<span>3.3</span></a> which shows multiple Gaussian distributions with different standard deviations. The smaller the standard deviation, the more precise our data is.</p>
+<p>The consequence of this larger standard deviation is that the mean value of the data becomes less obvious, and therefore our confidence in the mean value is reduced.</p>
+<div id="fig-sdspread" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing multiple Gaussian distributions with different standard deviations, the bigger the value of the standard deviation, the broader the distribution, as the number of data points is the same in each case the mean value falls, and becomes less obvious.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sdspread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Images/sdspread.png" class="img-fluid figure-img" alt="A chart showing multiple Gaussian distributions with different standard deviations, the bigger the value of the standard deviation, the broader the distribution, as the number of data points is the same in each case the mean value falls, and becomes less obvious.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sdspread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: The standard deviation is a measure of the spread of the data, the bigger the value the broader the distribution.
+</figcaption>
+</figure>
+</div>
+<p>If you have learned to calculate the standard deviation previously you will be aware that there are two different methods.</p>
+<p>The first method is to calculate the standard deviation of a population, and the second method is to calculate the standard deviation of a sample. The difference between these two methods is that when we are calculating the standard deviation of a sample we divide by <span class="math inline">\(N-1\)</span> instead of <span class="math inline">\(N\)</span>.</p>
+<p>We do this because if we have only collected a sample of data, we are not as confident in the mean value of that data as we would be if we had collected all the data. Therefore we need to account for this by dividing by <span class="math inline">\(N-1\)</span> instead of <span class="math inline">\(N\)</span>.</p>
+<p>As the number of data points increases the difference between the two methods becomes less significant, and when we have a large number of data points the two methods give very similar results.</p>
+<p>In practice we can never measure every possible value of a physical quantity, so we will always be calculating the standard deviation of a sample. Therefore we will always divide by <span class="math inline">\(N-1\)</span> when calculating the standard deviation.</p>
+<div id="tip-standarddeviation" class="callout callout-style-default callout-tip callout-titled" title="Calculating the standard deviation.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;3.3: Calculating the standard deviation.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}\)</span></p>
+</div>
 </div>
 
 

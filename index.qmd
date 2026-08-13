@@ -51,8 +51,8 @@ Chapter @sec-chapter2
 
 Chapter 3: Averages and Standard Deviation
 
-- Calculating averages to appropriate significant figures.
-- Understanding data distribution and standard deviation.
+* @sec-averages Calculating averages to appropriate significant figures.
+* @sec-standarddeviation Understanding data distribution and standard deviation.
 
 Chapter 4: The Standard Error
 
