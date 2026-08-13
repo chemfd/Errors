@@ -1,0 +1,51 @@
+# The use of the standard error. {#sec-chapter2}
+
+In @sec-chapter1 said that the number of significant figures was a measure of the confidence we have in our value, but we can calculate a value for that confidence, which we call the standard error, from the spread of the data.
+
+It is important to remember that all data has a spread, we do not expect every measurement to be exactly the same no matter how careful we are. The spread of the data is a measure of the uncertainty in our measurements, and we can use that to calculate the standard error.
+
+![The spread of data.](Images/dataspread.png){#fig-dataspread fig-alt="A chart showing the spread of data where the data points are distributed around the mean."}
+
+Your data being 'far' from the mean isn't a bad thing, it just means that you have collected  data that falls within the expected spread of the data. This distrubtion of data is why, as scientists, we take multiple measurements of the same thing. We want to be sure that our data is representative of the true value.
+
+You will notice from @fig-dataspread that the data points are symmetrically distributed around the mean. This is what we expect to see in Gaussian (sometimes called normal) distribution of data, you will likely have seen this distrubtion in school, or be familiar with the concept of standard deviation. When we calculate a standard deviation (and later a standard error) we are assuming that our data is normally distributed, and that the mean is a good representation of the data.
+
+## The standard deviation. {#sec-standarddeviation}
+
+Our Gaussian distribution has a maximum at the mean and a symmetrical distribution around the mean.
+
+::: {#fig-gaussian layout-ncol=2}
+
+![The mean is the maximum of the Gaussian distribution.](Images/sdmean.png){#fig-sdmean fig-alt="A chart showing a Gaussian distribution with the mean marked at the distribution maximum."}
+
+![One standard deviation each side of the mean encompases 68.3 % of the data.](Images/sd1st.png){#fig-sd1st fig-alt="A chart showing a Gaussian distribution with the first standard deviation marked."}
+
+![Two standard deviations each side of the mean encompases 95.4 % of the data.](Images/sd2nd.png){#fig-sd2nd fig-alt="A chart showing a Gaussian distribution with the second standard deviation marked."}
+
+![Three standard deviations each side of the mean encompases 99.7 % of the data.](Images/sd3rd.png){#fig-sd3rd fig-alt="A chart showing a Gaussian distribution with the third standard deviation marked."} 
+
+The Gaussian distribution and distribution of data described by the standard deviation.
+:::
+
+When our data is precise our standard deviation is small. 
+
+The standard deviation is a measure of the spread of the data, and therefore a measure of the uncertainty in our measurements. This can be seen in @fig-sdspread which shows multiple Gaussian distributions with different standard deviations. The smaller the standard deviation, the more precise our data is.
+
+The consequence of this larger standard deviation is that the mean value of the data becomes less obvious, and therefore our confidence in the mean value is reduced.
+
+![The standard deviation is a measure of the spread of the data, the bigger the value the broader the distribution.](Images/sdspread.png){#fig-sdspread fig-alt="A chart showing multiple Gaussian distributions with different standard deviations, the bigger the value of the standard deviation, the broader the distribution, as the number of data points is the same in each case the mean value falls, and becomes less obvious."}
+
+If you have learned to calculate the standard deviation previously you will be aware that there are two different methods.
+
+The first method is to calculate the standard deviation of a population, and the second method is to calculate the standard deviation of a sample. The difference between these two methods is that when we are calculating the standard deviation of a sample we divide by $N-1$ instead of $N$.
+
+We do this because if we have only collected a sample of data, we are not as confident in the mean value of that data as we would be if we had collected all the data. Therefore we need to account for this by dividing by $N-1$ instead of $N$.
+
+As the number of data points increases the difference between the two methods becomes less significant, and when we have a large number of data points the two methods give very similar results.
+
+In practice we can never measure every possible value of a physical quantity, so we will always be calculating the standard deviation of a sample. Therefore we will always divide by $N-1$ when calculating the standard deviation.
+
+:::{#tip-standarddeviation .callout-tip title="Calculating the standard deviation."}
+$\sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}$
+:::
+

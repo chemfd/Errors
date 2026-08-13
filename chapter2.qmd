@@ -249,7 +249,7 @@ Please remember you can refresh this question.
 Significant figures in logs and lns are a little different to the rules for addition, subtraction, multiplication and division because we have to think about the 'value' when accounting for how many significant figures we have in our answer.
 
 ::: {#tip-scales .callout-tip title="Significant figures in logs and lns."}
-When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 1 and the base then we do not gain a significant figure.
+When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 0 and the base then we do not gain a significant figure.
 :::
 
 Practically what does this mean? and why the do we sometimes gain a significant figure? The following example using $\log_{10}$ will help to explain this.
@@ -373,7 +373,6 @@ $10^{1.3491} = 22.34$
 Because our power is between 0 and 1, we should retain the same number of significant figures in our answer.
 :::
 
-#### Self check on our learning so far. {#sec-SelfcheckSFpowers}
 
 :::{.callout-note collapse="true"}
 ## Calculate $e^{-0.38}$.
@@ -422,7 +421,11 @@ Recall that $\textrm{pH} = -\log \{H^+\}$, so we can rearrange this to give us $
 
 We have a negative exponent, and it is less than -1, so we should loose a significant figure in our answer, so 3 significant figures in our exponent gives us 2 significant figures in our answer.
 
+Note: curly brackets are used to denote activity, and square brackets are used to denote concentration.
+
 :::
+
+
 
 ## Significant figures in mixed calculations {#sec-sfmixed}
 
@@ -441,7 +444,7 @@ Common examples of mixed calculations in chemistry involve temperature, where th
 
 
 ::: {.callout-caution title="Examples of significant figures in mixed calculations."}
-## Determine the change in Gibbs free energy, $\Delta G$, for a reaction at 25 K, if $\Delta H = -84.3$ kJ mol$^{-1}$ and $\Delta S = 0.164$ kJ K$^{-1}$ mol$^{-1}$.
+Determine the change in Gibbs free energy, $\Delta G$, for a reaction at 25 K, if $\Delta H = -84.3$ kJ mol$^{-1}$ and $\Delta S = 0.164$ kJ K$^{-1}$ mol$^{-1}$.
 
 $\Delta G = \Delta H - T \Delta S$
 
@@ -461,7 +464,7 @@ This is potentially a confusing result if you don't have a good understanding of
 :::
 
 ::: {.callout-caution title="Examples of significant figures in mixed calculations."}
-## Determine the rate constant for the first order reaction where the initial concentration of the reactant is 0.100 M, the final concentration of the reactant is 0.127 M and the time taken for this change is 70 minutes.
+Determine the rate constant for the first order reaction where the initial concentration of the reactant is 0.100 M, the final concentration of the reactant is 0.127 M and the time taken for this change is 70 minutes.
 
 If it is a first order reaction, then we can use the equation:
 
@@ -487,3 +490,103 @@ $k = \frac{1}{t} \ln \frac{[A]_0}{[A]} = \frac{1}{70 \textrm{ min}} \times (-0.2
 
 Here our time, $t$, has the fewest significant figures, so our answer should be reported to just 2 significant figures.
 :::
+
+
+### Exercises with mixed calculations.
+
+#### Self check on our learning so far. {#sec-Selfcheckmixed}
+
+In each case the equation you will need to use is given above the question, but it may be in a form that you need to rearrange to get the value you are looking for.
+
+$\Delta G = \Delta H - T \Delta S$.
+
+:::{.callout-note collapse="true"}
+## Determine the Gibbs free energy change at 50 ºC for the formation of calcite (CaCO$-3$), given the enthapy of formation is -1207 kJ mol$^{-1}$ and the entropy of formation is +92.9 J K$^{-1}$ mol$^{-1}$.
+
+$\Delta G = -1237 \textrm{ kJ mol}^{-1}$
+
+To do this we need the equation $\Delta G = \Delta H - T \Delta S$.
+
+First we need to convert our temperature to Kelvin, which is an addition calculation, so we need to consider the number of decimal places in our answer.
+
+T = 50 ºC + 273.15 K = 323 K (we should be considering this value to have 3 sig figs).
+
+Next we need to calculate $T \Delta S$. This is a multiplication calculation, so we need to consider the number of significant figures in our answer.
+
+$T \Delta S = 323 \textrm{ K} \times 92.9 \textrm{ J K}^{-1} \textrm{ mol}^{-1} = 3.00 \times 10^4 \textrm{ J mol}^{-1}$ = 30.0 kJ mol$^{-1}$
+
+Finally we can calculate $\Delta G = \Delta H - T \Delta S$. This is a subtraction calculation, so we need to consider the number of decimal places in our answer.
+
+$\Delta G = -1207 \textrm{ kJ mol}^{-1} - 30.0 \textrm{ kJ mol}^{-1} = -1237 \textrm{ kJ mol}^{-1}$
+
+:::
+
+$\Delta G = -RT \ln K$
+
+:::{.callout-note collapse="true"}
+## Determine the equilibrium constant, $K$, for a reaction with a Gibbs free energy change of -10.45 kJ mol$^{-1}$ at 36.5 ºC.
+
+$K = 57.9
+
+The first step here is to rearrange the equation to give us $K$ as the subject.
+
+$K = e^{-\frac{\Delta G}{RT}}$
+
+Now we need to convert our temperature to Kelvin, which is an addition calculation, so we need to consider the number of decimal places in our answer.
+
+T = 36.5 ºC + 273.15 K = 309.6 K (this value has been rounded to even and has 4 significant figures).
+
+Next we need to calculate the value of $\frac{\Delta G}{RT}$. This is a multiplication/division calculation, so we need to consider the number of significant figures in our answer.
+
+$\frac{\Delta G}{RT} = \frac{-10.45 \textrm{ kJ mol}^{-1}}{8.31447 \textrm{ J K}^{-1} \textrm{ mol}^{-1} \times 309.6 \textrm{ K}}$
+
+rewriting our units of kJ to J we have:
+
+$\frac{\Delta G}{RT} = \frac{-10.45 \times 10^3 \textrm{ J mol}^{-1}}{8.31447 \textrm{ J K}^{-1} \textrm{ mol}^{-1} \times 309.6 \textrm{ K}}$
+
+$\frac{\Delta G}{RT} = -4.060$ - our fewest significant figures is 4, so our answer should be reported to 4 significant figures.
+
+now we can calculate $K = e^{-\frac{\Delta G}{RT}}$.
+
+$K = e^{4.060} = 57.9$ - because our exponent is greater than 1, we should loose a significant figure in our answer, so 4 significant figures in our exponent gives us 3 significant figures in our answer.
+
+
+Finally we can calculate $K = e^{-\frac{\Delta G}{RT}}$. This is an exponent calculation, so we need to consider the number of significant figures in our answer.
+:::
+
+$E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}}$
+
+Recall - values in curly brackets are activities.
+
+:::{.callout-note collapse="true"}
+## Determine the cell potential, $E$ for a reaction at exactly 20 ºC, with a standard cell potential, $E^0$, of 1.012 V, a number of electrons transfered, $n$, of 2, and activities of the products and reactants of 0.563 and 1.263 respectively.
+
+$V = 1.022$ V
+
+First we need to deal with the 'implied' brackets:
+
+$\frac{\{\text{products}\}}{\{\text{reactants}\}} = \frac{0.563}{1.263} = 0.446$ 
+
+Three significant figures in our answer because our fewest significant figures in our calculation is 3.
+
+$T = 20 ºC + 273.15 K = 293.15 K$
+
+The temperature in the question is described as "exactly" 20 ºC, so we can consider this to have infinite significant figures. Therefore our temperature in Kelvin will also have infinite significant figures.
+
+The next highest priority operation is the log:
+
+$\ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = \ln(0.446) = -0.807$.
+
+The value we are taking the log of is between 0 and the base, so we do not gain a significant figure in our answer.
+
+The next highest priority operation is the multiplication/division:
+
+$\frac{RT}{nF}\ln \frac{\{\text{products}\}}{\{\text{reactants}\}}  = \frac{8.31447 \textrm{ J K}^{-1} \textrm{ mol}^{-1} \times 293.15 \textrm{ K}}{2 \times 96485 \textrm{ C mol}^{-1}} \times (-0.807) = -0.0102$ V 
+
+The final step is to calculate the cell potential, $E$. This is a subtraction calculation, so we need to consider the number of decimal places in our answer.
+
+$E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = 1.012 \textrm{ V} - (-0.0102 \textrm{ V}) = 1.022 \textrm{ V}$
+
+:::
+
+#### Self assessment question on mixed calculations.

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>chapter3 – An Introduction to Errors and Error Analysis</title>
+<title>3&nbsp; The use of the standard error. – An Introduction to Errors and Error Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating fullcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">chapter3.html</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The use of the standard error.</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">chapter3.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The use of the standard error.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -145,15 +145,118 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-standarddeviation" id="toc-sec-standarddeviation" class="nav-link active" data-scroll-target="#sec-standarddeviation"><span class="header-section-number">3.1</span> The standard deviation.</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-chapter2" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The use of the standard error.</span></span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<p>In <a href="chapter1.html" class="quarto-xref"><span>Chapter 1</span></a> said that the number of significant figures was a measure of the confidence we have in our value, but we can calculate a value for that confidence, which we call the standard error, from the spread of the data.</p>
+<p>It is important to remember that all data has a spread, we do not expect every measurement to be exactly the same no matter how careful we are. The spread of the data is a measure of the uncertainty in our measurements, and we can use that to calculate the standard error.</p>
+<div id="fig-dataspread" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing the spread of data where the data points are distributed around the mean.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dataspread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Images/dataspread.png" class="img-fluid figure-img" alt="A chart showing the spread of data where the data points are distributed around the mean.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dataspread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: The spread of data.
+</figcaption>
+</figure>
+</div>
+<p>Your data being ‘far’ from the mean isn’t a bad thing, it just means that you have collected data that falls within the expected spread of the data. This distrubtion of data is why, as scientists, we take multiple measurements of the same thing. We want to be sure that our data is representative of the true value.</p>
+<p>You will notice from <a href="#fig-dataspread" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> that the data points are symmetrically distributed around the mean. This is what we expect to see in Gaussian (sometimes called normal) distribution of data, you will likely have seen this distrubtion in school, or be familiar with the concept of standard deviation. When we calculate a standard deviation (and later a standard error) we are assuming that our data is normally distributed, and that the mean is a good representation of the data.</p>
+<section id="sec-standarddeviation" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-standarddeviation"><span class="header-section-number">3.1</span> The standard deviation.</h2>
+<p>Our Gaussian distribution has a maximum at the mean and a symmetrical distribution around the mean.</p>
+<div id="fig-gaussian" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gaussian-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-gaussian" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-sdmean" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing a Gaussian distribution with the mean marked at the distribution maximum.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sdmean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Images/sdmean.png" class="img-fluid figure-img" data-ref-parent="fig-gaussian" alt="A chart showing a Gaussian distribution with the mean marked at the distribution maximum.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sdmean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) The mean is the maximum of the Gaussian distribution.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-gaussian" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-sd1st" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing a Gaussian distribution with the first standard deviation marked.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sd1st-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Images/sd1st.png" class="img-fluid figure-img" data-ref-parent="fig-gaussian" alt="A chart showing a Gaussian distribution with the first standard deviation marked.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sd1st-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) One standard deviation each side of the mean encompases 68.3 % of the data.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-gaussian" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-sd2nd" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing a Gaussian distribution with the second standard deviation marked.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sd2nd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Images/sd2nd.png" class="img-fluid figure-img" data-ref-parent="fig-gaussian" alt="A chart showing a Gaussian distribution with the second standard deviation marked.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sd2nd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Two standard deviations each side of the mean encompases 95.4 % of the data.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-gaussian" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-sd3rd" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A chart showing a Gaussian distribution with the third standard deviation marked.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sd3rd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Images/sd3rd.png" class="img-fluid figure-img" data-ref-parent="fig-gaussian" alt="A chart showing a Gaussian distribution with the third standard deviation marked.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sd3rd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) Three standard deviations each side of the mean encompases 99.7 % of the data.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gaussian-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: The Gaussian distribution and distribution of data described by the standard deviation.
+</figcaption>
+</figure>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
