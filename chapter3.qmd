@@ -19,9 +19,11 @@ You will notice from @fig-dataspread that the data points are symmetrically dist
 
 There are different types of average, but the one we are interested in, and the one you are probably most familiar with, is the mean. The mean is calculated by adding all the values together and dividing by the number of values.
 
-:::{#tip-mean .callout-tip title="Calculating the mean."}
+:::{#tip-mean .callout-tip title="Calculating the mean, $\bar {x}$."}
 $\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}$
 :::
+
+The overline above the x indicates it is the mean of the x values,  we can use this notation for any variable, for example the mean of $\Delta T$ would be written as $\bar {\Delta T}$, or $\bar {\Delta _r H}$.
 
 * When calculating the mean using Excel you can use the function '=AVERAGE()' to calculate the mean of a set of values.
 
@@ -36,12 +38,11 @@ $\bar {\Delta T} = 10.45$ K
 
 $\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}$
 
-here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$
+here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$ K
 
-$\bar {\Delta T} = \frac{73.15}{7} = 10.45$ K
+$\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45$ K
 
 :::
-
 
 
 ### The mid-range {#sec-midrange}
@@ -68,11 +69,12 @@ $\Delta T$ / K : 10.33, 10.33, 10.41, 10.42, 10.49, 10.57, 10.60
 
 $\text{Mid-range} = \frac{\text{Max value} + \text{Min value}}{2}$
 
-$\Delta T_{\textrm{Mid-range}} = \frac{10.60 + 10.33}{2} = 10.46$ K
+$\Delta T_{\textrm{Mid-range}} = \frac{10.60 \textrm{ K} + 10.33 \textrm{ K}}{2} = 10.46$ K
 
 Here we have to maintain the number of significant figures in our calculation, so we report the mid-range to 2 decimal places, the same as the data we are using to calculate it. The answer has then been rounded to even.
 
 :::
+
 
 
 ### Exercises calculating the mean and mid-range.
@@ -80,8 +82,50 @@ Here we have to maintain the number of significant figures in our calculation, s
 #### Self check on our learning so far. 
 
 :::{.callout-note collapse="true"}
+## Determine the mean of the following set of data: $\Delta _r H$ / kJ mol$^{-1}$ : -92.3, -87.4, -90.1
+
+$\bar {\Delta _r H} = -89.9$ kJ mol$^{-1}$
+
+$\bar {\Delta _r H} = \frac{\sum_{i=1}^{N} \Delta _r H_i}{N}$
+
+here $N$ = 3, and $\sum_{i=1}^{N} \Delta _r H_i = -269.8$ kJ mol$^{-1}$
+
+$\bar {\Delta _r H} = \frac{-269.8 \textrm{ kJ mol}^{-1}}{3} = -89.9$ kJ mol$^{-1}$
+
+Note that we have had to round our answer to 1 decimal place, the same as the data we are using to calculate it.
+:::
+
+
+:::{.callout-note collapse="true"}
+## Determine the mean of the following set of data: $k$ / $10^6$ s$^{-1}$ : 41.362, 36.52, 37.663, 40.92
+
+$\bar {k} = 39.12 \times 10^6$ s$^{-1}$
+
+$\bar {k} = \frac{\sum_{i=1}^{N} k_i}{N}$
+
+here $N$ = 4, and ${\sum_{i=1}^{N} k_i} = 156.465 \times 10^6$ s$^{-1}$
+
+$\bar {k} = \frac{156.465\times 10^6 \textrm{ s}^{-1}}{4} = 39.12 \times 10^6$ s$^{-1}$
+
+Here some of our data has 2 decimal places and some 3 decimal places, our mean needs to reflect the lowest precision in our data, so should have 2 decimal places.
+:::
+
+:::{.callout-note collapse="true"}
+## Determine the average of the following data: $\Delta T$ / K: 1.205, 1.193, 1.198, 1.204
+
+$\bar {\Delta T}$ = 1.200 K
+
+$\bar {\Delta T} = \frac{\sum_{i=1}^{N} \Delta T_i}{N}$
+
+here $N$ = 4, and $\sum_{i=1}^{N} \Delta T_i = 4.800$ K
+
+$\bar {\Delta T} = \frac{4.800 \textrm{ K} }{4} = 1.200$ K
+
+Be careful to record significant zeros (even if your calculator, Excel or Python don't report them).
 
 :::
+
+
 
 
 #### Self assessment questions on mean and mid-range.
@@ -106,6 +150,7 @@ Our Gaussian distribution has a maximum at the mean and a symmetrical distributi
 The Gaussian distribution and distribution of data described by the standard deviation.
 :::
 
+
 When our data is precise our standard deviation is small. 
 
 The standard deviation is a measure of the spread of the data, and therefore a measure of the uncertainty in our measurements. This can be seen in @fig-sdspread which shows multiple Gaussian distributions with different standard deviations. The smaller the standard deviation, the more precise our data is.
@@ -124,7 +169,6 @@ As the number of data points increases the difference between the two methods be
 
 In practice we can never measure every possible value of a physical quantity, so we will always be calculating the standard deviation of a sample. Therefore we will always divide by $N-1$ when calculating the standard deviation.
 
-:::{#tip-standarddeviation .callout-tip title="Calculating the standard deviation."}
+:::{#tip-standarddeviation .callout-tip title="Calculating the standard deviation, $\sigma$."}
 $\sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}$
 :::
-
