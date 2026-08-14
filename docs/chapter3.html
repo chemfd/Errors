@@ -503,7 +503,7 @@ Tip&nbsp;3.3: Calculating the standard deviation, <span class="math inline">\(s\
 <p><span class="math inline">\(s = \sqrt{\frac{\sum\limits_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}\)</span></p>
 </div>
 </div>
-<p>For completeness the equation for the population standard deviation is:</p>
+<p>For completeness the equation for the population standard deviation, <span class="math inline">\(\sigma\)</span> is:</p>
 <p><span class="math inline">\(\sigma = \sqrt{\frac{\sum\limits_{i=1}^{N} (x_i - \bar{x})^2}{N}}\)</span></p>
 <p>although there is no reason we should use this version.</p>
 <p>When calculating the standard deviation using Excel you can use the =stdev.s() (=stdev() also works). When using python you can use <code>statistics.stdev()</code> or <code>numpy.std()</code>.</p>
@@ -521,6 +521,7 @@ Tip&nbsp;3.3: Calculating the standard deviation, <span class="math inline">\(s\
 <p><span class="math inline">\(\bar{T} = \frac{\sum\limits_{i=1}^{N} T_i}{N}\)</span></p>
 <p>here N = 7, and <span class="math inline">\(\sum\limits_{i=1}^{N} x_i = 73.15\)</span> K</p>
 <p><span class="math inline">\(\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45\)</span> K</p>
+<p>We have taken a sample, and so we need to use the equation for sample standard deviation.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -567,18 +568,19 @@ Tip&nbsp;3.3: Calculating the standard deviation, <span class="math inline">\(s\
 </tr>
 <tr class="even">
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
 <td style="text-align: center;"><span class="math inline">\(\sum\limits_{i=1}^{N}(x_i-\bar{x})^2=\)</span></td>
 <td style="text-align: center;">0.0698</td>
 </tr>
 </tbody>
 </table>
+<p><span class="math inline">\(s(\Delta T) = \sqrt{\frac{\sum\limits_{i=1}^{N} (T_i - \bar{T})^2}{N-1}}\)</span></p>
+<p>This notation (<span class="math inline">\(s(\Delta T)\)</span>) indicates that the sample standard deviation is a function of the temperature difference, <span class="math inline">\(\Delta T\)</span>.</p>
+<p><span class="math inline">\(s = \sqrt{\frac{0.0698}{7-1}}\)</span></p>
+<p><span class="math inline">\(s = 0.11\)</span> K</p>
+<p>Note that the standard deviation is reported to the same number of decimal places as our data.</p>
 </div>
 </div>
+<p>Practically, calculating standard deviations by hand is anacronistic, so feel free to calculate these using Excel or python.</p>
 <section id="exercises-calculating-the-mean-and-mid-range.-1" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="exercises-calculating-the-mean-and-mid-range.-1"><span class="header-section-number">3.2.1</span> Exercises calculating the mean and mid-range.</h3>
 <section id="self-check-on-our-learning-so-far.-1" class="level4" data-number="3.2.1.1">
