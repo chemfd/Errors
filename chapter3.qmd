@@ -125,7 +125,21 @@ Be careful to record significant zeros (even if your calculator, Excel or Python
 
 :::
 
+:::{.callout-note collapse="true"}
+## Determine the mid-range of the following set of data: $A$: 0.102, 0.097, 0.104, 0.100
 
+$A_{\textrm{mid-range}} = 0.100$
+
+$A_{\textrm{mid-range}} = \frac{A_\textrm{max} + A_\textrm{min}}{2}$
+
+Putting the data in increasing order: 0.097, 0.100, 0.102, 0.104
+
+So our $A_{\textrm{min}} = 0.097$ and our $A_{\textrm{max}} = 0.104$ 
+
+$A_{\textrm{mid-range}} = \frac{0.097+0.104}{2} = 0.100$
+
+Note here we have rounded our answer to even, so the 0.1005 rounds down when accomodating the correct number of significant figures. Again remember those significant zeros when writing down your answer.
+:::
 
 
 #### Self assessment questions on mean and mid-range.
