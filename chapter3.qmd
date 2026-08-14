@@ -36,7 +36,7 @@ Determine the mean of the following set of data: $\Delta T$ / K : 10.33, 10.42, 
 
 $\bar {\Delta T} = 10.45$ K
 
-$\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}$
+$\bar{T} = \frac{\sum_{i=1}^{N} T_i}{N}$
 
 here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$ K
 
@@ -147,7 +147,18 @@ Note here we have rounded our answer to even, so the 0.1005 rounds down when acc
 
 
 
-## The standard deviation. {#sec-standarddeviation}
+## The standard deviation, $\sigma$ or $s$. {#sec-standarddeviation}
+
+The following two sets of data share the same mean, and the same precision, but they are clearly very different sets of data:
+
+* 9.0, 9.5, 10.0, 10.5, 11.0       $\bar {x} = 10.0$      $x_{min} = 9.0$, $x_{max} = 11.0$
+
+* 9.8, 9.9, 10.0, 10.1, 10.2       $\bar {x} = 10.0$      $x_{min} = 9.8$, $x_{max} = 10.2$
+
+So we need a method to describe the distribution, to help us understand the data.
+
+
+The standard deviation is represented by the symbol $\sigma$ or $s$. These represent two subtly different forms of the standard deviation, the standard deviation of the population (where all possible measurements have been made), $sigma$, and the standard deviation of a sample of the population, $s$.
 
 Our Gaussian distribution has a maximum at the mean and a symmetrical distribution around the mean.
 
@@ -164,8 +175,7 @@ Our Gaussian distribution has a maximum at the mean and a symmetrical distributi
 The Gaussian distribution and distribution of data described by the standard deviation.
 :::
 
-
-When our data is precise our standard deviation is small. 
+When our data is precise our standard deviation is small.
 
 The standard deviation is a measure of the spread of the data, and therefore a measure of the uncertainty in our measurements. This can be seen in @fig-sdspread which shows multiple Gaussian distributions with different standard deviations. The smaller the standard deviation, the more precise our data is.
 
@@ -183,6 +193,46 @@ As the number of data points increases the difference between the two methods be
 
 In practice we can never measure every possible value of a physical quantity, so we will always be calculating the standard deviation of a sample. Therefore we will always divide by $N-1$ when calculating the standard deviation.
 
-:::{#tip-standarddeviation .callout-tip title="Calculating the standard deviation, $\sigma$."}
-$\sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}$
+:::{#tip-standarddeviation .callout-tip title="Calculating the standard deviation, $s$."}
+In scientific measurements we should always calculate the sample standard devation, $s$.
+
+$s = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}$
 :::
+
+
+For completeness the equation for the population standard deviation is:
+
+$\sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N}}$
+
+although there is no reason we should use this version.
+
+When calculating the standard deviation using Excel you can use the =stdev.s() (=stdev() also works). When using python you can use ```statistics.stdev()``` or ```numpy.std()```.
+
+::: {.callout-caution title="Calculating the standard deviation of a set of data."}
+Determine the appropriate standard deviation of the following set of data: $\Delta T$ / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49
+
+$\bar{T} = \frac{\sum_{i=1}^{N} T_i}{N}$
+
+here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$ K
+
+$\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45$ K
+
+| $T$ / K | $\bar{T} - T$ / K | $(\bar{T} - T)^2$ / K$^2$ |
+|:--:|:--:|:--:|
+|10.33|-0.12|0.0144|
+|10.42|-0.03|0.0009|
+|10.41|-0.04|0.0016|
+|10.60|0.15|0.0225|
+|10.57|0.12|0.0144|
+|10.33|-0.12|0.0144|
+|10.49|0.04| 0.0016|
+||||
+||$\sum\limits_{i=1}^{N}(x_i-\bar{x})^2=$|0.0698|
+
+
+:::
+
+### Exercises calculating the mean and mid-range.
+
+#### Self check on our learning so far.
+
