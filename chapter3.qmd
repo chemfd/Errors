@@ -20,7 +20,7 @@ You will notice from @fig-dataspread that the data points are symmetrically dist
 There are different types of average, but the one we are interested in, and the one you are probably most familiar with, is the mean. The mean is calculated by adding all the values together and dividing by the number of values.
 
 :::{#tip-mean .callout-tip title="Calculating the mean, $\bar {x}$."}
-$\bar{x} = \frac{\sum_{i=1}^{N} x_i}{N}$
+$\bar{x} = \frac{\sum\limits_{i=1}^{N} x_i}{N}$
 :::
 
 The overline above the x indicates it is the mean of the x values,  we can use this notation for any variable, for example the mean of $\Delta T$ would be written as $\bar {\Delta T}$, or $\bar {\Delta _r H}$.
@@ -36,9 +36,9 @@ Determine the mean of the following set of data: $\Delta T$ / K : 10.33, 10.42, 
 
 $\bar {\Delta T} = 10.45$ K
 
-$\bar{T} = \frac{\sum_{i=1}^{N} T_i}{N}$
+$\bar{T} = \frac{\sum\limits_{i=1}^{N}T_i}{N}$
 
-here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$ K
+here N = 7, and $\sum\limits_{i=1}^{N}x_i = 73.15$ K
 
 $\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45$ K
 
@@ -86,9 +86,9 @@ Here we have to maintain the number of significant figures in our calculation, s
 
 $\bar {\Delta _r H} = -89.9$ kJ mol$^{-1}$
 
-$\bar {\Delta _r H} = \frac{\sum_{i=1}^{N} \Delta _r H_i}{N}$
+$\bar {\Delta _r H} = \frac{\sum\limits_{i=1}^{N} \Delta _r H_i}{N}$
 
-here $N$ = 3, and $\sum_{i=1}^{N} \Delta _r H_i = -269.8$ kJ mol$^{-1}$
+here $N$ = 3, and $\sum\limits_{i=1}^{N}\Delta _r H_i = -269.8$ kJ mol$^{-1}$
 
 $\bar {\Delta _r H} = \frac{-269.8 \textrm{ kJ mol}^{-1}}{3} = -89.9$ kJ mol$^{-1}$
 
@@ -101,9 +101,9 @@ Note that we have had to round our answer to 1 decimal place, the same as the da
 
 $\bar {k} = 39.12 \times 10^6$ s$^{-1}$
 
-$\bar {k} = \frac{\sum_{i=1}^{N} k_i}{N}$
+$\bar {k} = \frac{\sum\limits_{i=1}^{N} k_i}{N}$
 
-here $N$ = 4, and ${\sum_{i=1}^{N} k_i} = 156.465 \times 10^6$ s$^{-1}$
+here $N$ = 4, and ${\sum\limits_{i=1}^{N} k_i} = 156.465 \times 10^6$ s$^{-1}$
 
 $\bar {k} = \frac{156.465\times 10^6 \textrm{ s}^{-1}}{4} = 39.12 \times 10^6$ s$^{-1}$
 
@@ -115,9 +115,9 @@ Here some of our data has 2 decimal places and some 3 decimal places, our mean n
 
 $\bar {\Delta T}$ = 1.200 K
 
-$\bar {\Delta T} = \frac{\sum_{i=1}^{N} \Delta T_i}{N}$
+$\bar {\Delta T} = \frac{\sum\limits_{i=1}^{N} \Delta T_i}{N}$
 
-here $N$ = 4, and $\sum_{i=1}^{N} \Delta T_i = 4.800$ K
+here $N$ = 4, and $\sum\limits_{i=1}^{N} \Delta T_i = 4.800$ K
 
 $\bar {\Delta T} = \frac{4.800 \textrm{ K} }{4} = 1.200$ K
 
@@ -196,13 +196,13 @@ In practice we can never measure every possible value of a physical quantity, so
 :::{#tip-standarddeviation .callout-tip title="Calculating the standard deviation, $s$."}
 In scientific measurements we should always calculate the sample standard devation, $s$.
 
-$s = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}$
+$s = \sqrt{\frac{\sum\limits_{i=1}^{N} (x_i - \bar{x})^2}{N-1}}$
 :::
 
 
 For completeness the equation for the population standard deviation is:
 
-$\sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \bar{x})^2}{N}}$
+$\sigma = \sqrt{\frac{\sum\limits_{i=1}^{N} (x_i - \bar{x})^2}{N}}$
 
 although there is no reason we should use this version.
 
@@ -211,9 +211,9 @@ When calculating the standard deviation using Excel you can use the =stdev.s() (
 ::: {.callout-caution title="Calculating the standard deviation of a set of data."}
 Determine the appropriate standard deviation of the following set of data: $\Delta T$ / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49
 
-$\bar{T} = \frac{\sum_{i=1}^{N} T_i}{N}$
+$\bar{T} = \frac{\sum\limits_{i=1}^{N} T_i}{N}$
 
-here N = 7, and $\sum_{i=1}^{N} x_i = 73.15$ K
+here N = 7, and $\sum\limits_{i=1}^{N} x_i = 73.15$ K
 
 $\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45$ K
 
