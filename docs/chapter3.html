@@ -187,7 +187,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#sec-standarddeviation" id="toc-sec-standarddeviation" class="nav-link" data-scroll-target="#sec-standarddeviation"><span class="header-section-number">3.2</span> The standard deviation, <span class="math inline">\(\sigma\)</span> or <span class="math inline">\(s\)</span>.</a>
   <ul class="collapse">
-  <li><a href="#exercises-calculating-the-mean-and-mid-range.-1" id="toc-exercises-calculating-the-mean-and-mid-range.-1" class="nav-link" data-scroll-target="#exercises-calculating-the-mean-and-mid-range.-1"><span class="header-section-number">3.2.1</span> Exercises calculating the mean and mid-range.</a></li>
+  <li><a href="#exercises-calculating-the-standard-deviation." id="toc-exercises-calculating-the-standard-deviation." class="nav-link" data-scroll-target="#exercises-calculating-the-standard-deviation."><span class="header-section-number">3.2.1</span> Exercises calculating the standard deviation.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -518,8 +518,8 @@ Tip&nbsp;3.3: Calculating the standard deviation, <span class="math inline">\(s\
 </div>
 <div class="callout-body-container callout-body">
 <p>Determine the appropriate standard deviation of the following set of data: <span class="math inline">\(\Delta T\)</span> / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49</p>
-<p><span class="math inline">\(\bar{T} = \frac{\sum\limits_{i=1}^{N} T_i}{N}\)</span></p>
-<p>here N = 7, and <span class="math inline">\(\sum\limits_{i=1}^{N} x_i = 73.15\)</span> K</p>
+<p><span class="math inline">\(\bar{T} = \dfrac{\sum\limits_{i=1}^{N} T_i}{N}\)</span></p>
+<p>here N = 7, and <span class="math inline">\(\sum\limits_{i=1}^{N} T = 73.15\)</span> K</p>
 <p><span class="math inline">\(\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45\)</span> K</p>
 <p>We have taken a sample, and so we need to use the equation for sample standard deviation.</p>
 <table class="caption-top table">
@@ -581,10 +581,53 @@ Tip&nbsp;3.3: Calculating the standard deviation, <span class="math inline">\(s\
 </div>
 </div>
 <p>Practically, calculating standard deviations by hand is anacronistic, so feel free to calculate these using Excel or python.</p>
-<section id="exercises-calculating-the-mean-and-mid-range.-1" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="exercises-calculating-the-mean-and-mid-range.-1"><span class="header-section-number">3.2.1</span> Exercises calculating the mean and mid-range.</h3>
+<section id="exercises-calculating-the-standard-deviation." class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="exercises-calculating-the-standard-deviation."><span class="header-section-number">3.2.1</span> Exercises calculating the standard deviation.</h3>
 <section id="self-check-on-our-learning-so-far.-1" class="level4" data-number="3.2.1.1">
 <h4 data-number="3.2.1.1" class="anchored" data-anchor-id="self-check-on-our-learning-so-far.-1"><span class="header-section-number">3.2.1.1</span> Self check on our learning so far.</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the appropriate standard deviation of the following set of data: <span class="math inline">\(\Delta _r H\)</span> / kJ mol<span class="math inline">\(^{-1}\)</span> : -92.3, -87.4, -90.1 (<span class="math inline">\(\sum\limits_{i=1}^{N} (\Delta _r H - \bar{\Delta _r H}) = 12.05\)</span>)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(s(\Delta _r H) = 2.5\)</span></p>
+<p>N = 3, <span class="math inline">\(\sum\limits_{i=1}^{N} (\Delta _r H - \bar{\Delta _r H}) = 12.05\)</span></p>
+<p><span class="math inline">\(s(\Delta _r H) = \sqrt{\frac{\sum\limits_{i=1}^{N} (\Delta _r H - \bar{\Delta _r H})^2}{N-1}}\)</span></p>
+<p>We only have a small sample of data so we should use <span class="math inline">\(N-1\)</span> in our denominator.</p>
+<p><span class="math inline">\(s(\Delta _r H) = \sqrt{\frac{12.05}{3-1}}\)</span></p>
+<p><span class="math inline">\(s(\Delta _r H) = 2.5\)</span></p>
+<p>Note: the standard deviation has been rounded to the same precision as the data.</p>
+</div>
+</div>
+</div>
+<p>Attempt the following questions using either Excel or Python (or your calculator if you prefer).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the appropriate standard deviation of the following set of data: <span class="math inline">\(A\)</span>: 0.102, 0.097, 0.104, 0.100
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(s(A) = 0.003\)</span></p>
+<p>Again we should be using the sample standard deviation.</p>
+<p>You should have used the =stdev.s() function if using excel and selected your data in the bracket.</p>
+<p>If using python after importing your library (either statisticas or numpy) then in either the stdev function will calculate your standard deviation.</p>
+<p>Note: the standard deviation has been rounded to the same precision as the data.</p>
+</div>
+</div>
+</div>
 
 
 </section>

@@ -211,9 +211,9 @@ When calculating the standard deviation using Excel you can use the =stdev.s() (
 ::: {.callout-caution title="Calculating the standard deviation of a set of data."}
 Determine the appropriate standard deviation of the following set of data: $\Delta T$ / K : 10.33, 10.42, 10.41, 10.60, 10.57, 10.33, 10.49
 
-$\bar{T} = \frac{\sum\limits_{i=1}^{N} T_i}{N}$
+$\bar{T} = \dfrac{\sum\limits_{i=1}^{N} T_i}{N}$
 
-here N = 7, and $\sum\limits_{i=1}^{N} x_i = 73.15$ K
+here N = 7, and $\sum\limits_{i=1}^{N} T = 73.15$ K
 
 $\bar {\Delta T} = \frac{73.15 \textrm{ K}}{7} = 10.45$ K
 
@@ -245,7 +245,41 @@ Note that the standard deviation is reported to the same number of decimal place
 Practically, calculating standard deviations by hand is anacronistic, so feel free to calculate these using Excel or python.
 
 
-### Exercises calculating the mean and mid-range.
+### Exercises calculating the standard deviation.
 
 #### Self check on our learning so far.
+
+:::{.callout-note collapse="true"}
+## Determine the appropriate standard deviation of the following set of data: $\Delta _r H$ / kJ mol$^{-1}$ : -92.3, -87.4, -90.1 ($\sum\limits_{i=1}^{N} (\Delta _r H - \bar{\Delta _r H}) = 12.05$)
+
+$s(\Delta _r H) = 2.5$
+
+N = 3, $\sum\limits_{i=1}^{N} (\Delta _r H - \bar{\Delta _r H}) = 12.05$
+
+$s(\Delta _r H) = \sqrt{\frac{\sum\limits_{i=1}^{N} (\Delta _r H - \bar{\Delta _r H})^2}{N-1}}$
+
+We only have a small sample of data so we should use $N-1$ in our denominator.
+
+$s(\Delta _r H) = \sqrt{\frac{12.05}{3-1}}$
+
+$s(\Delta _r H) = 2.5$
+
+Note: the standard deviation has been rounded to the same precision as the data.
+:::
+
+Attempt the following questions using either Excel or Python (or your calculator if you prefer).
+
+:::{.callout-note collapse="true"}
+## Determine the appropriate standard deviation of the following set of data: $A$: 0.102, 0.097, 0.104, 0.100
+
+$s(A) = 0.003$
+
+Again we should be using the sample standard deviation.
+
+You should have used the =stdev.s() function if using excel and selected your data in the bracket.
+
+If using python after importing your library (either statisticas or numpy) then in either the stdev function will calculate your standard deviation.
+
+Note: the standard deviation has been rounded to the same precision as the data.
+:::
 
