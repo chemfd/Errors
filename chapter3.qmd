@@ -283,3 +283,18 @@ If using python after importing your library (either statisticas or numpy) then 
 Note: the standard deviation has been rounded to the same precision as the data.
 :::
 
+:::{.callout-note collapse="true"}
+## Determine the appropriate standard deviation of the following set of data: $\Lambda _0 =$ 168.4, 162.9, 175.2, 176.1, 170.0
+
+$s(A) = 5.4$
+
+Again we should be using the sample standard deviation.
+
+You should have used the =stdev.s() function if using excel and selected your data in the bracket.
+
+<iframe width="671" height="443" src="https://www.youtube.com/embed/4LqvsNQWYBI" title="Solving standard deviation question in excel - Propagation of Errors resource" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+If using python after importing your library (either statisticas or numpy) then in either the stdev function will calculate your standard deviation.
+
+Note: the standard deviation has been rounded to the same precision as the data.
+:::
