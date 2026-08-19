@@ -292,9 +292,32 @@ Again we should be using the sample standard deviation.
 
 You should have used the =stdev.s() function if using excel and selected your data in the bracket.
 
-<iframe width="671" height="443" src="https://www.youtube.com/embed/4LqvsNQWYBI" title="Solving standard deviation question in excel - Propagation of Errors resource" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/KtPDuJ6DYW0" title="Excel average stdev conductivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 If using python after importing your library (either statisticas or numpy) then in either the stdev function will calculate your standard deviation.
 
+This example uses the ```statistics``` library, the next example uses the ```numpy``` library.
+
+<iframe width="671" height="510" src="https://www.youtube.com/embed/CTgeQyjZEdg" title="Python average stdev conductivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Note: the standard deviation has been rounded to the same precision as the data.
+:::
+
+
+:::{.callout-note collapse="true"}
+## Determine the mean and standard deviation of the following set of data: $k$ / $10^6$ s$^{-1}$: 23.14, 25.36, 26.5, 28.01, 28.6, 29.21
+
+$\bar{k}$ = $26.8 \times 10^6$ s${-1}$
+s($k$) = 2.3 \times 10^6$ s${-1}$
+
+Here we have rounded both the mean and the sample standard deviation to 1 decimal place - the lowest precision going into our calculation.
+
+You are best to calculate this using a computer (as this is how you will do it in the. lab).
+
+Solution using Excel.
+<iframe width="671" height="510" src="https://www.youtube.com/embed/w5RvLR8zgRk" title="Excel average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Solution using Python.
+<iframe width="671" height="510" src="https://www.youtube.com/embed/sR71dMqdaoQ" title="Python average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 :::
