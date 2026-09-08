@@ -208,5 +208,35 @@
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Averages and standard deviation.</span>"
     ]
+  },
+  {
+    "objectID": "chapter4.html",
+    "href": "chapter4.html",
+    "title": "4  The standard error",
+    "section": "",
+    "text": "4.1 Significant figures in the standard error\nIn Chapter Section 3.2 we learned about the standard deviation, which tells us about the spread of data. No matter how careful we are in taking measurements this spread will always exist, and can only be changed by using a different method or technique.\nWe of course have only been able to ‘guess’ our true mean, because we only measure a sample of the data, and we use the sample standard deviation to ‘hedge our bets’. However this standard deviation (sample or population) shouldn’t change as we increase the number of measurements we take, it is a property of the data and the method used to collect it, but our confidence in the mean should increase as we take more measurements.\nThis is where the standard error, \\(\\sigma_{\\bar{x}}\\), comes in. The standard error is a measure of how confident we are in our sample mean, and it is calculated using the formula:\nwhere \\(\\sigma\\) is the population standard deviation and \\(n\\) is the number of measurements.\nWhilst formally called the standard error of the mean, we often just refer to it as the ‘error’ or ‘uncertainty’ in the mean. As we increase the number of measurements, \\(n\\), the standard error will decrease, and our confidence in the mean will increase.\nWhen we calculated the standard deviation in Section 3.2 we learned that we could report the standard deviation to the same precision as the data used to calculate it. So in some of our examples we reported standard deviations to 1 significant figure, others 2, and there is no reason why we can’t report to more significant figures if the data set allows it.\nHowever, when we calculate a standard error, we only ever report it to 1 significant figure, and in calculating the value we always round up. Even a calculated standard error value of 0.1002 would round up to be reported as 0.2. This is because the standard error is a measure of our confidence in the mean, and we don’t want to give a false sense of precision.\n::: {.callout-caution title=“Calculating the standard error from a sample standard deviation”.”}\nDetermine the standard error of the mean when the sample standard deviation is 0.56 and the number of measurements is 4.\n\\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\)\nOur sample standard deviation, \\(\\sigma\\) = 0.56 and our number of measurements, \\(n\\) = 4.\n\\(\\sigma_{\\bar{x}} = \\frac{0.56}{\\sqrt{4}}\\)\n\\(\\sigma_{\\bar{x}} = 0.28\\) which needs to be rounded up to just one significant figure:\n\\(\\sigma_{\\bar{x}} = 0.3\\) :::",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>The standard error</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#sec-sigfigstandarderror",
+    "href": "chapter4.html#sec-sigfigstandarderror",
+    "title": "4  The standard error",
+    "section": "",
+    "text": "4.1.1 Exercises calculating standard error.\n\n4.1.1.1 Self check on our learning so far.\n\n\n\n\n\n\nNoteDetermine the standard error of the mean when the sample standard deviation is 0.46 and the number of measurements is 3.\n\n\n\n\n\n\\(\\sigma_{\\bar{x}} = 0.3\\)\n\\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\)\nOur sample standard deviation, \\(\\sigma\\) = 0.46 and our number of measurements, \\(n\\) = 3.\n\\(\\sigma_{\\bar{x}} = \\frac{0.46}{\\sqrt{3}}\\)\n\\(\\sigma_{\\bar{x}} = 0.265...\\) which needs to be rounded up to just one significant figure:\n\\(\\sigma_{\\bar{x}} = 0.3\\)\n\n\n\n\n\n\n\n\n\nNoteDetermine the standard error of the mean when the sample standard deviation is 2.34 and the number of measurements is 5.\n\n\n\n\n\n\\(\\sigma_{\\bar{x}} = 2\\)\n\\(\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}\\)\nOur sample standard deviation, \\(\\sigma\\) = 2.34 and our number of measurements, \\(n\\) = 5.\n\\(\\sigma_{\\bar{x}} = \\frac{2.34}{\\sqrt{5}}\\)\n\\(\\sigma_{\\bar{x}} = 1.046...\\) which needs to be rounded up to just one significant figure:\n\\(\\sigma_{\\bar{x}} = 2\\)\nThis might not feel right, but remember that the standard error is a measure of our confidence in the mean, and we don’t want to give a false sense of precision.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>The standard error</span>"
+    ]
+  },
+  {
+    "objectID": "chapter4.html#sec-errorprecision",
+    "href": "chapter4.html#sec-errorprecision",
+    "title": "4  The standard error",
+    "section": "4.2 How standard error affects precision",
+    "text": "4.2 How standard error affects precision\nWe have said that when we report a standard error we always round up to 1 significant figure, but this may mean that the precision of our mean is different to the stardard error we have calculated. Therefore, if this is the case, we need to reduce the precision of our calculated mean to reflect the precision of our error or uncertainty.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>The standard error</span>"
+    ]
   }
 ]

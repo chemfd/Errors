@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>chapter4 – An Introduction to Errors and Error Analysis</title>
+<title>4&nbsp; The standard error – An Introduction to Errors and Error Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,10 +72,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-sidebar floating fullcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -84,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">chapter4.html</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The standard error</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -136,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter4.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">chapter4.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The standard error</span></span></a>
   </div>
 </li>
     </ul>
@@ -144,15 +173,126 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-sigfigstandarderror" id="toc-sec-sigfigstandarderror" class="nav-link active" data-scroll-target="#sec-sigfigstandarderror"><span class="header-section-number">4.1</span> Significant figures in the standard error</a>
+  <ul class="collapse">
+  <li><a href="#exercises-calculating-standard-error." id="toc-exercises-calculating-standard-error." class="nav-link" data-scroll-target="#exercises-calculating-standard-error."><span class="header-section-number">4.1.1</span> Exercises calculating standard error.</a></li>
+  </ul></li>
+  <li><a href="#sec-errorprecision" id="toc-sec-errorprecision" class="nav-link" data-scroll-target="#sec-errorprecision"><span class="header-section-number">4.2</span> How standard error affects precision</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-standarderror" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The standard error</span></span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<p>In Chapter <a href="chapter3.html#sec-standarddeviation" class="quarto-xref"><span>Section 3.2</span></a> we learned about the standard deviation, which tells us about the spread of data. No matter how careful we are in taking measurements this spread will always exist, and can only be changed by using a different method or technique.</p>
+<p>We of course have only been able to ‘guess’ our true mean, because we only measure a sample of the data, and we use the sample standard deviation to ‘hedge our bets’. However this standard deviation (sample or population) shouldn’t change as we increase the number of measurements we take, it is a property of the data and the method used to collect it, but our confidence in the mean should increase as we take more measurements.</p>
+<p>This is where the standard error, <span class="math inline">\(\sigma_{\bar{x}}\)</span>, comes in. The standard error is a measure of how confident we are in our sample mean, and it is calculated using the formula:</p>
+<div id="tip-mean" class="callout callout-style-default callout-tip callout-titled" title="Calculating the standard error, $\sigma_{\bar {x}}$.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma_{\bar {x}}\)</span>.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
+</div>
+</div>
+<p>where <span class="math inline">\(\sigma\)</span> is the population standard deviation and <span class="math inline">\(n\)</span> is the number of measurements.</p>
+<p>Whilst formally called the standard error of the mean, we often just refer to it as the ‘error’ or ‘uncertainty’ in the mean. As we increase the number of measurements, <span class="math inline">\(n\)</span>, the standard error will decrease, and our confidence in the mean will increase.</p>
+<section id="sec-sigfigstandarderror" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-sigfigstandarderror"><span class="header-section-number">4.1</span> Significant figures in the standard error</h2>
+<p>When we calculated the standard deviation in <a href="chapter3.html#sec-standarddeviation" class="quarto-xref"><span>Section 3.2</span></a> we learned that we could report the standard deviation to the same precision as the data used to calculate it. So in some of our examples we reported standard deviations to 1 significant figure, others 2, and there is no reason why we can’t report to more significant figures if the data set allows it.</p>
+<p>However, when we calculate a standard error, we only ever report it to 1 significant figure, and in calculating the value we <strong>always</strong> round up. Even a calculated standard error value of 0.1002 would round up to be reported as 0.2. This is because the standard error is a measure of our confidence in the mean, and we don’t want to give a false sense of precision.</p>
+<p>::: {.callout-caution title=“Calculating the standard error from a sample standard deviation”.”}</p>
+<p>Determine the standard error of the mean when the sample standard deviation is 0.56 and the number of measurements is 4.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(\sigma\)</span> = 0.56 and our number of measurements, <span class="math inline">\(n\)</span> = 4.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{0.56}{\sqrt{4}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 0.28\)</span> which needs to be rounded up to just one significant figure:</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span> :::</p>
+<section id="exercises-calculating-standard-error." class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="exercises-calculating-standard-error."><span class="header-section-number">4.1.1</span> Exercises calculating standard error.</h3>
+<section id="self-check-on-our-learning-so-far." class="level4" data-number="4.1.1.1">
+<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="self-check-on-our-learning-so-far."><span class="header-section-number">4.1.1.1</span> Self check on our learning so far.</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the standard error of the mean when the sample standard deviation is 0.46 and the number of measurements is 3.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(\sigma\)</span> = 0.46 and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{0.46}{\sqrt{3}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 0.265...\)</span> which needs to be rounded up to just one significant figure:</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the standard error of the mean when the sample standard deviation is 2.34 and the number of measurements is 5.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\sigma_{\bar{x}} = 2\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(\sigma\)</span> = 2.34 and our number of measurements, <span class="math inline">\(n\)</span> = 5.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{2.34}{\sqrt{5}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 1.046...\)</span> which needs to be rounded up to just one significant figure:</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 2\)</span></p>
+<p>This might not <em>feel</em> right, but remember that the standard error is a measure of our confidence in the mean, and we don’t want to give a false sense of precision.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="sec-errorprecision" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-errorprecision"><span class="header-section-number">4.2</span> How standard error affects precision</h2>
+<p>We have said that when we report a standard error we always round up to 1 significant figure, but this may mean that the precision of our mean is different to the stardard error we have calculated. Therefore, if this is the case, we need to reduce the precision of our calculated mean to reflect the precision of our error or uncertainty.</p>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
