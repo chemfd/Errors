@@ -208,7 +208,7 @@ window.Quarto = {
 </header>
 
 
-<p>In Chapter <a href="chapter3.html#sec-standarddeviation" class="quarto-xref"><span>Section 3.2</span></a> we learned about the standard deviation, which tells us about the spread of data. No matter how careful we are in taking measurements this spread will always exist, and can only be changed by using a different method or technique.</p>
+<p>In <a href="chapter3.html#sec-standarddeviation" class="quarto-xref"><span>Section 3.2</span></a> we learned about the standard deviation, which tells us about the spread of data. No matter how careful we are in taking measurements this spread will always exist, and can only be changed by using a different method or technique.</p>
 <p>We of course have only been able to ‘guess’ our true mean, because we only measure a sample of the data, and we use the sample standard deviation to ‘hedge our bets’. However this standard deviation (sample or population) shouldn’t change as we increase the number of measurements we take, it is a property of the data and the method used to collect it, but our confidence in the mean should increase as we take more measurements.</p>
 <p>This is where the standard error, <span class="math inline">\(\sigma_{\bar{x}}\)</span>, comes in. The standard error is a measure of how confident we are in our sample mean, and it is calculated using the formula:</p>
 <div id="tip-mean" class="callout callout-style-default callout-tip callout-titled" title="Calculating the standard error, $\sigma_{\bar {x}}$.">
@@ -221,28 +221,41 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
 </div>
 </div>
-<p>where <span class="math inline">\(\sigma\)</span> is the population standard deviation and <span class="math inline">\(n\)</span> is the number of measurements.</p>
-<p>Whilst formally called the standard error of the mean, we often just refer to it as the ‘error’ or ‘uncertainty’ in the mean. As we increase the number of measurements, <span class="math inline">\(n\)</span>, the standard error will decrease, and our confidence in the mean will increase.</p>
+<p>where <span class="math inline">\(s\)</span> is the sample standard deviation and <span class="math inline">\(n\)</span> is the number of measurements.</p>
+<p>Ideally we should use the population standard deviation, <span class="math inline">\(\sigma\)</span>, but logically if we knew ‘all’ of the data, we would know the mean of that data exactly and there would be little need for an error on this value.</p>
+<p>Whilst formally called the <em>standard error of the mean</em>, we often just refer to it as the ‘error’ or ‘uncertainty’ in the mean. As we increase the number of measurements, <span class="math inline">\(n\)</span>, the sample and population standard deviations converge, the standard error will decrease, and our confidence in the mean will increase.</p>
 <section id="sec-sigfigstandarderror" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="sec-sigfigstandarderror"><span class="header-section-number">4.1</span> Significant figures in the standard error</h2>
 <p>When we calculated the standard deviation in <a href="chapter3.html#sec-standarddeviation" class="quarto-xref"><span>Section 3.2</span></a> we learned that we could report the standard deviation to the same precision as the data used to calculate it. So in some of our examples we reported standard deviations to 1 significant figure, others 2, and there is no reason why we can’t report to more significant figures if the data set allows it.</p>
 <p>However, when we calculate a standard error, we only ever report it to 1 significant figure, and in calculating the value we <strong>always</strong> round up. Even a calculated standard error value of 0.1002 would round up to be reported as 0.2. This is because the standard error is a measure of our confidence in the mean, and we don’t want to give a false sense of precision.</p>
-<p>::: {.callout-caution title=“Calculating the standard error from a sample standard deviation”.”}</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Calculating the standard error from a sample standard deviation.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Calculating the standard error from a sample standard deviation.
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Determine the standard error of the mean when the sample standard deviation is 0.56 and the number of measurements is 4.</p>
-<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
-<p>Our sample standard deviation, <span class="math inline">\(\sigma\)</span> = 0.56 and our number of measurements, <span class="math inline">\(n\)</span> = 4.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 0.56 and our number of measurements, <span class="math inline">\(n\)</span> = 4.</p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = \frac{0.56}{\sqrt{4}}\)</span></p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = 0.28\)</span> which needs to be rounded up to just one significant figure:</p>
-<p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span> :::</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span></p>
+</div>
+</div>
+<p>I will note here that although practically we would only ever have 1 significant figure in our standard error you may see examples in the (physics) literature where the standard error is reported to 2 significant figures. This is usually because these uncertainties have been calculated from thousands of measurements, indicating a high level of precision and a high confidence in their mean. In our practical work we can never hope to achieve this level of precision and so will only ever report our standard error to 1 significant figure.</p>
 <section id="exercises-calculating-standard-error." class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="exercises-calculating-standard-error."><span class="header-section-number">4.1.1</span> Exercises calculating standard error.</h3>
 <section id="self-check-on-our-learning-so-far." class="level4" data-number="4.1.1.1">
 <h4 data-number="4.1.1.1" class="anchored" data-anchor-id="self-check-on-our-learning-so-far."><span class="header-section-number">4.1.1.1</span> Self check on our learning so far.</h4>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -251,11 +264,11 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span></p>
-<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
-<p>Our sample standard deviation, <span class="math inline">\(\sigma\)</span> = 0.46 and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 0.46 and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = \frac{0.46}{\sqrt{3}}\)</span></p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = 0.265...\)</span> which needs to be rounded up to just one significant figure:</p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = 0.3\)</span></p>
@@ -263,7 +276,7 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -272,11 +285,11 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(\sigma_{\bar{x}} = 2\)</span></p>
-<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
-<p>Our sample standard deviation, <span class="math inline">\(\sigma\)</span> = 2.34 and our number of measurements, <span class="math inline">\(n\)</span> = 5.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 2.34 and our number of measurements, <span class="math inline">\(n\)</span> = 5.</p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = \frac{2.34}{\sqrt{5}}\)</span></p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = 1.046...\)</span> which needs to be rounded up to just one significant figure:</p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = 2\)</span></p>
@@ -290,6 +303,74 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 <section id="sec-errorprecision" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="sec-errorprecision"><span class="header-section-number">4.2</span> How standard error affects precision</h2>
 <p>We have said that when we report a standard error we always round up to 1 significant figure, but this may mean that the precision of our mean is different to the stardard error we have calculated. Therefore, if this is the case, we need to reduce the precision of our calculated mean to reflect the precision of our error or uncertainty.</p>
+<p>So if we have calculated a mean of 2.37 and then a standard error of 0.4, we would reduce the precision of our mean to 2.4.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Adjusting a mean to match the precision of its standard error.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Adjusting a mean to match the precision of its standard error.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A sample was measured 3 times and the mean was calculated to be 101.25, with a standard deviation of 2.54. Calculate the standard error and adjust the mean to match the precision of the standard error.</p>
+<p>First we need to calculate the standard error:</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 2.54 and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{2.54}{\sqrt{3}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 1.46...\)</span> which needs to be rounded up to just one significant figure:</p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = 2\)</span></p>
+<p>Our ‘uncertainty’ is 2, and so we should loose both decimal places in our mean.</p>
+<p><span class="math inline">\(\bar{x} = 101\)</span></p>
+</div>
+</div>
+<p>Again, this might not <em>feel</em> right, but we should never be reporting values to an unrealistically high precision, as this precision is our first indication of our confidence in the mean. If we have good equipment that can record values to a high precision, but our repeatabiity is less good (and our standard deviation and consequently our standard error is large) then this needs to be reflected in the data we are reporting.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the standard error and correct the mean if necessary for the following data set: <span class="math inline">\(\bar{k} = 3.2 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span>, <span class="math inline">\(n\)</span> = 3, <span class="math inline">\(s = 0.8 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span>.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\bar{k} = 3.2 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span> <span class="math inline">\(\sigma_{\bar{k}} = 0.5 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 0.8 ^8$ s<span class="math inline">\(^{-1}\)</span> and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
+<p><span class="math inline">\(\sigma_{\bar{k}} = \frac{0.8 \times 10^8}{\sqrt{3}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{k}} = 0.461... \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span> which needs to be rounded up to just one significant figure:</p>
+<p><span class="math inline">\(\sigma_{\bar{k}} = 0.5 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span></p>
+<p>This means that our standard error is already to the same precision as our mean.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Determine the standard error and correct the mean if necessary for the following data set: <span class="math inline">\(\bar{A}\)</span> = 0.245, <span class="math inline">\(n\)</span> = 4, <span class="math inline">\(s\)</span> = 0.034.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\bar{A} = 0.24\)</span> <span class="math inline">\(\sigma_{\bar{A}} = 0.02\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
+<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 0.034 and our number of measurements, <span class="math inline">\(n\)</span> = 4.</p>
+<p><span class="math inline">\(\sigma_{\bar{A}} = \frac{0.034}{\sqrt{4}}\)</span></p>
+<p><span class="math inline">\(\sigma_{\bar{A}} = 0.017...\)</span> which needs to be rounded up to just one significant figure:</p>
+<p><span class="math inline">\(\sigma_{\bar{A}} = 0.02\)</span></p>
+<p>This means that our standard error is in the second decimal place, and so we need to reduce the precision of our mean to match this.</p>
+<p>Without any other information about how the mean was calculated (and therefore if it isn’t ‘exactly’ 0.245) we should reduce the precision of our mean to 2 decimal places, and so using ‘round to even’ we would report our mean as 0.24.</p>
+</div>
+</div>
+</div>
 
 
 </section>
