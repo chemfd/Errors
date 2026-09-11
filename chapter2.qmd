@@ -136,6 +136,9 @@ Please remember you can refresh this question.
 <iframe src="https://numbas.mathcentre.ac.uk/question/210135/sig-figs-add-sub/embed/?token=504985f6-ad65-4e25-8415-4a61de7d9766" width=100% height="300"></iframe>
 ```
 
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/210791/calculate-molar-mass/embed/?token=6efdf064-52e6-48f7-bd63-af431e8140c2" width = 100% height = "400"></iframe>
+```
 
 ## Significant figures in multiplication and division {#sec-sfmuldiv}
 
@@ -403,7 +406,7 @@ This is one of the cases where our exponent is less than -1, so we should loose 
 :::
 
 :::{.callout-note collapse="true"}
-## Calculate 10$^0.477$.
+## Calculate $10^{0.477}$.
 
 3.0
 

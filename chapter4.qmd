@@ -111,7 +111,7 @@ $\bar{x} = 101$
 Again, this might not *feel* right, but we should never be reporting values to an unrealistically high precision, as this precision is our first indication of our confidence in the mean. If we have good equipment that can record values to a high precision, but our repeatabiity is less good (and our standard deviation and consequently our standard error is large) then this needs to be reflected in the data we are reporting.
 
 :::{.callout-note collapse="true"}
-## Determine the standard error and correct the mean if necessary for the following data set: $\bar{k} = 3.2 \times 10^8$ s$^{-1}$, $n$ = 3, $s = 0.8 \times 10^8$ s$^{-1}$.  
+## Determine the standard error and correct the mean if necessary for the following data set: $\bar{k} = 3.2 \times 10^8$ s$^{-1}$, $n = 3$, $s = 0.8 \times 10^8$ s$^{-1}$.  
 
 $\bar{k} = 3.2 \times 10^8$ s$^{-1}$
 $\sigma_{\bar{k}} = 0.5 \times 10^8$ s$^{-1}$
@@ -130,7 +130,7 @@ This means that our standard error is already to the same precision as our mean.
 :::
 
 :::{.callout-note collapse="true"}
-## Determine the standard error and correct the mean if necessary for the following data set: $\bar{A}$ = 0.245, $n$ = 4, $s$ = 0.034.  
+## Determine the standard error and correct the mean if necessary for the following data set: $\bar{A}$ = 0.245$, $n = 4$, $s = 0.034$.  
 
 $\bar{A} = 0.24$
 $\sigma_{\bar{A}} = 0.02$
