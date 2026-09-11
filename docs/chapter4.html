@@ -183,6 +183,7 @@ window.Quarto = {
   <li><a href="#exercises-calculating-standard-error." id="toc-exercises-calculating-standard-error." class="nav-link" data-scroll-target="#exercises-calculating-standard-error."><span class="header-section-number">4.1.1</span> Exercises calculating standard error.</a></li>
   </ul></li>
   <li><a href="#sec-errorprecision" id="toc-sec-errorprecision" class="nav-link" data-scroll-target="#sec-errorprecision"><span class="header-section-number">4.2</span> How standard error affects precision</a></li>
+  <li><a href="#sec-reportingerror" id="toc-sec-reportingerror" class="nav-link" data-scroll-target="#sec-reportingerror"><span class="header-section-number">4.3</span> Reporting the mean and standard error</a></li>
   </ul>
 </nav>
     </div>
@@ -340,7 +341,7 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(\bar{k} = 3.2 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span> <span class="math inline">\(\sigma_{\bar{k}} = 0.5 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span></p>
 <p><span class="math inline">\(\sigma_{\bar{x}} = \frac{s}{\sqrt{n}}\)</span></p>
-<p>Our sample standard deviation, <span class="math inline">\(s\)</span> = 0.8 ^8$ s<span class="math inline">\(^{-1}\)</span> and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
+<p>Our sample standard deviation, <span class="math inline">\(s = 0.8 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span> and our number of measurements, <span class="math inline">\(n\)</span> = 3.</p>
 <p><span class="math inline">\(\sigma_{\bar{k}} = \frac{0.8 \times 10^8}{\sqrt{3}}\)</span></p>
 <p><span class="math inline">\(\sigma_{\bar{k}} = 0.461... \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span> which needs to be rounded up to just one significant figure:</p>
 <p><span class="math inline">\(\sigma_{\bar{k}} = 0.5 \times 10^8\)</span> s<span class="math inline">\(^{-1}\)</span></p>
@@ -371,6 +372,24 @@ Tip&nbsp;4.1: Calculating the standard error, <span class="math inline">\(\sigma
 </div>
 </div>
 </div>
+</section>
+<section id="sec-reportingerror" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-reportingerror"><span class="header-section-number">4.3</span> Reporting the mean and standard error</h2>
+<p>We have calculated both means and standard errors, but have so far only reported them separately. However, it is common to report the mean and standard error together, and this is usually done in one of two ways:</p>
+<ul>
+<li>First we can use bracket notation, where the mean is reported with a number in brackets following the mean. The number in brackets is the standard error, and that error occurs in the number immediagely before the bracket.</li>
+</ul>
+<p>So if we have a mean of 101 and a standard error of 2, we can report this as 101(2).</p>
+<p>If we have a mean of 3.2 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span> and a standard error of 0.5 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span>, we can report this as 3.2(5) <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span>.</p>
+<p>If we have a mean of 1.234 g and a standard error of 0.006 g, we can report this as 1.234 (6) g.</p>
+<p>This method is particularly useful with values with units, or those with powers.</p>
+<ul>
+<li>Secondly we can use the <span class="math inline">\(\pm\)</span> notation, where we report the mean, followed by the <span class="math inline">\(\pm\)</span> symbol, then the standard error. In this case the standard error should be reported with any prefixing zeros, or powers of 10 included.</li>
+</ul>
+<p>So if we have a mean of 101 and a standard error of 2, we can report this as 101 <span class="math inline">\(\pm\)</span> 2.</p>
+<p>If we have a mean of 3.2 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span> and a standard error of 0.5 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span>, we can report this as 3.2 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span> <span class="math inline">\(\pm\)</span> 0.5 <span class="math inline">\(\times\)</span> 10<span class="math inline">\(^8\)</span> s<span class="math inline">\(^{-1}\)</span>.</p>
+<p>If we have a mean of 1.234 g and a standard error of 0.006 g, we can report this as 1.234 g <span class="math inline">\(\pm\)</span> 0.006 g.</p>
+<p>This second method is less elegant (more to type) butalso suffers from lack of clarity as it is also an acceptable way to report the mean and standard deviation. Consequently when data is reported in reference books it is more ususally reported using bracket notation, however it is important to be familiar with both methods.</p>
 
 
 </section>
