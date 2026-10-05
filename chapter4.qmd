@@ -196,3 +196,29 @@ or the $\pm$ notation:
 :::
 
 The example above is a very simple case which has no powers or units, and we can see that bracket notation becomes clearer (if we understand what it is saying) when powers and units  are involved.
+
+:::{.callout-caution title="Reporting a mean and standard error of a value with powers and units."}
+
+The kinetic rate constant of a second order reaction was measured 4 times and the mean was calculated to be 2.456 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$, with a standard deviation of 0.034 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$.
+
+Firstly we need to calculate the standard error from the sample standard deviation:
+
+$\sigma_{\bar{k}} = \frac{s}{\sqrt{n}}$
+$\sigma_{\bar{k}} = \frac{0.034}{\sqrt{4}} \times 10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+$\sigma_{\bar{k}} = 0.017 \times 10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+
+This should be reported to just one significant figure, and so we round up to 0.02 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$.
+
+The error now is just to two decimal places (if we keep the powers of 10 and units separate) and so we need to reduce the precision of our mean to match this. 
+
+This gives us a mean of $2.46 \times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$.
+
+Now we can report the mean and stanard eror together, first using bracket notation:
+
+$\sigma_{\bar{k}} = 2.46(2) \times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+
+Or using the $\pm$ notation:
+
+$\sigma_{\bar{k}} = 2.46 \times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$ $\pm$ 0.02 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+
+:::

@@ -80,6 +80,8 @@ Whilst care is taken in production of this manuscript, errors may be present. If
 
 ## Resource history
 
+* 5th October 2026 - beta release of chapters 1-4
+* 14th September 2026 - Chapter 4 SAQ included.
 * 30th July 2026 - Chapter 2 SAQ included.
 * 17th July 2026 - First embedded question code included, chapter 2 start.
 * 16th June 2026 - First commit of index and chapter 1.
