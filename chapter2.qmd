@@ -133,11 +133,13 @@ It is important to remember to include significant zeros if they are there. Thes
 Please remember you can refresh this question.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/210135/sig-figs-add-sub/embed/?token=504985f6-ad65-4e25-8415-4a61de7d9766" width=100% height="300"></iframe>
+<iframe src="https://numbas.mathcentre.ac.uk/question/210135/sig-figs-add-sub/embed/?token=504985f6-ad65-4e25-8415-4a61de7d9766" width=100% height="400"></iframe>
 ```
 
+Question in context:
+
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/210791/calculate-molar-mass/embed/?token=6efdf064-52e6-48f7-bd63-af431e8140c2" width = 100% height = "400"></iframe>
+<iframe src="https://numbas.mathcentre.ac.uk/question/210791/calculate-molar-mass/embed/?token=6efdf064-52e6-48f7-bd63-af431e8140c2" width = 100% height = "760"></iframe>
 ```
 
 ## Significant figures in multiplication and division {#sec-sfmuldiv}
@@ -247,6 +249,10 @@ When values are large some poeple want to write 4 060 000 (3sf) but given our ru
 
 Please remember you can refresh this question.
 
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/213408/significant-figures-multiplication-and-division/embed/?token=bce0a478-607e-4a2f-a0c0-55de9183b8b4" width=100% height="600"></iframe>
+```
+
 ## Significant figures in logarithms {#sec-sflog}
 
 Significant figures in logs and lns are a little different to the rules for addition, subtraction, multiplication and division because we have to think about the 'value' when accounting for how many significant figures we have in our answer.
@@ -279,7 +285,7 @@ The same principle works if we have very small numbers, for example $\log(0.0022
 :::
 
 
-### Exercises with logarythm examples.
+### Exercises with logarithm examples.
 
 #### Self check on our learning so far.
 
@@ -309,7 +315,11 @@ $\textrm{pH} = -\log {\{H^+\}}$
 Our concentration may also be written as 5.59 $\times$ 10$^{-6}$, this value is less than 1, so we will gain a significnant figure.
 :::
 
-#### Self assessment question on significant figures with logarythms.
+#### Self assessment question on significant figures with logarithms.
+
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/213410/significant-figures-logarithms/embed/?token=f6dbd410-d35d-4d0e-b3bf-9477bf8ec782" width=100% height="300"></iframe>
+```
 
 ## Significant figures in exponents, powers and roots. {#sec-sfpowers}
 
@@ -334,7 +344,7 @@ V = 48.4 cm$^{3}$
 
 This principle stands with any power, be it integers, fractions (square and cube roots), or negative powers. The number of significant figures in our answer should be the same as the number of significant figures in the value we are operating on.
 
-If you recall, in some circumstances when taking logarythms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.
+If you recall, in some circumstances when taking logarithms we sometimes gained a significant figure. When taking exponents (the reciprocal function of logs) then this means that we sometimes need to loose a significant figure.
 
 ::: {#tip-scales .callout-tip title="Significant figures with exponents."}
 When taking an antilog (so for example $10^x$ or $e^x$) we should retain the same number of significant figures if our exponent is between -1 and 1.
