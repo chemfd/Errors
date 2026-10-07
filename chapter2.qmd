@@ -438,7 +438,11 @@ Note: curly brackets are used to denote activity, and square brackets are used t
 
 :::
 
+#### Self assessment question on significant figures with powers and exponents.
 
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/212825/significant-figures-powers-and-exponents/embed/" width=100% height="450"></iframe>
+```
 
 ## Significant figures in mixed calculations {#sec-sfmixed}
 
@@ -603,3 +607,7 @@ $E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = 
 :::
 
 #### Self assessment question on mixed calculations.
+
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/213855/significant-figures-mixed-calculations/embed/?token=b6ef0b3d-7580-42a2-b4de-6102dc027b2e" width=100% height="900"></iframe>
+```
