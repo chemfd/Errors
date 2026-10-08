@@ -250,7 +250,7 @@ When values are large some poeple want to write 4 060 000 (3sf) but given our ru
 Please remember you can refresh this question.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213408/significant-figures-multiplication-and-division/embed/?token=bce0a478-607e-4a2f-a0c0-55de9183b8b4" width=100% height="600"></iframe>
+<iframe src="https://numbas.mathcentre.ac.uk/question/213408/significant-figures-multiplication-and-division/embed/?token=bce0a478-607e-4a2f-a0c0-55de9183b8b4" width=100% height="900"></iframe>
 ```
 
 ## Significant figures in logarithms {#sec-sflog}
@@ -441,7 +441,7 @@ Note: curly brackets are used to denote activity, and square brackets are used t
 #### Self assessment question on significant figures with powers and exponents.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/212825/significant-figures-powers-and-exponents/embed/" width=100% height="450"></iframe>
+<iframe src="https://numbas.mathcentre.ac.uk/question/212825/significant-figures-powers-and-exponents/embed/" width=100% height="1400"></iframe>
 ```
 
 ## Significant figures in mixed calculations {#sec-sfmixed}
@@ -609,5 +609,5 @@ $E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = 
 #### Self assessment question on mixed calculations.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213855/significant-figures-mixed-calculations/embed/" width=100% height="900"></iframe>
+<iframe src="https://numbas.mathcentre.ac.uk/question/213855/significant-figures-mixed-calculations/embed/" width=100% height="1750"></iframe>
 ```
