@@ -144,7 +144,9 @@ Note here we have rounded our answer to even, so the 0.1005 rounds down when acc
 
 #### Self assessment questions on mean and mid-range.
 
-
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/213856/mean-and-mid-range/embed/" width=100% height="600"></iframe>
+```
 
 
 ## The standard deviation, $\sigma$ or $s$. {#sec-standarddeviation}
@@ -322,3 +324,9 @@ Solution using Python.
 <iframe width="671" height="510" src="https://www.youtube.com/embed/sR71dMqdaoQ" title="Python average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::
+
+#### Self assessment question on the standard deviation.
+
+```{=html}
+<iframe src="https://numbas.mathcentre.ac.uk/question/213896/standard-deviation/embed/" width=100% height="1000"></iframe>
+```
