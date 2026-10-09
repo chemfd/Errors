@@ -258,7 +258,7 @@ Please remember you can refresh this question.
 Significant figures in logs and lns are a little different to the rules for addition, subtraction, multiplication and division because we have to think about the 'value' when accounting for how many significant figures we have in our answer.
 
 ::: {#tip-scales .callout-tip title="Significant figures in logs and lns."}
-When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 0 and the base then we do not gain a significant figure.
+When taking logs we usually gain 1 significant figure, however if the ‘logged value’ is between 1 and the base then we do not gain a significant figure.
 :::
 
 Practically what does this mean? and why the do we sometimes gain a significant figure? The following example using $\log_{10}$ will help to explain this.

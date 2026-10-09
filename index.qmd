@@ -80,6 +80,7 @@ Whilst care is taken in production of this manuscript, errors may be present. If
 
 ## Resource history
 
+* 9th October 2026 - typo fixed  in Chapter 2 Logarithms section. It should read between 1 and the base, not between 0 and the base.
 * 5th October 2026 - beta release of chapters 1-4
 * 14th September 2026 - Chapter 4 SAQ included.
 * 30th July 2026 - Chapter 2 SAQ included.
