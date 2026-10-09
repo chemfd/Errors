@@ -145,7 +145,7 @@ Note here we have rounded our answer to even, so the 0.1005 rounds down when acc
 #### Self assessment questions on mean and mid-range.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213856/mean-and-mid-range/embed/" width=100% height="600"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213856/mean-and-mid-range/embed/" width=100% height="600"></iframe>
 ```
 
 
@@ -294,13 +294,13 @@ Again we should be using the sample standard deviation.
 
 You should have used the =stdev.s() function if using excel and selected your data in the bracket.
 
-<iframe width="100%" src="https://www.youtube.com/embed/KtPDuJ6DYW0" title="Excel average stdev conductivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" width="100%" src="https://www.youtube.com/embed/KtPDuJ6DYW0" title="Excel average stdev conductivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 If using python after importing your library (either statisticas or numpy) then in either the stdev function will calculate your standard deviation.
 
 This example uses the ```statistics``` library, the next example uses the ```numpy``` library.
 
-<iframe width="671" height="510" src="https://www.youtube.com/embed/CTgeQyjZEdg" title="Python average stdev conductivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" width="671" height="510" src="https://www.youtube.com/embed/CTgeQyjZEdg" title="Python average stdev conductivity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Note: the standard deviation has been rounded to the same precision as the data.
 :::
@@ -318,15 +318,15 @@ Here we have rounded both the mean and the sample standard deviation to 1 decima
 You are best to calculate this using a computer (as this is how you will do it in the. lab).
 
 Solution using Excel.
-<iframe width="671" height="510" src="https://www.youtube.com/embed/w5RvLR8zgRk" title="Excel average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" width="671" height="510" src="https://www.youtube.com/embed/w5RvLR8zgRk" title="Excel average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Solution using Python.
-<iframe width="671" height="510" src="https://www.youtube.com/embed/sR71dMqdaoQ" title="Python average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" width="671" height="510" src="https://www.youtube.com/embed/sR71dMqdaoQ" title="Python average stdev kinetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::
 
 #### Self assessment question on the standard deviation.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213896/standard-deviation/embed/" width=100% height="1000"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213896/standard-deviation/embed/" width=100% height="1000"></iframe>
 ```
