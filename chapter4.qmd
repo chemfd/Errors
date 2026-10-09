@@ -161,23 +161,28 @@ Without any other information about how the mean was calculated (and therefore i
 
 We have calculated both means and standard errors, but have so far only reported them separately. However, it is common to report the mean and standard error together, and this is usually done in one of two ways:
 
-* First we can use bracket notation, where the mean is reported with a number in brackets following the mean. The number in brackets is the standard error, and that error occurs in the number immediagely before the bracket.
+:::{.callout-caution title="Calculating the standard error from a sample standard deviation."}
+First we can use bracket notation, where the mean is reported with a number in brackets following the mean. The number in brackets is the standard error, and that error occurs in the number immediagely before the bracket.
 
 So if we have a mean of 101 and a standard error of 2, we can report this as 101(2).
 
 If we have a mean of 3.2 $\times$ 10$^8$ s$^{-1}$ and a standard error of 0.5 $\times$ 10$^8$ s$^{-1}$, we can report this as 3.2(5) $\times$ 10$^8$ s$^{-1}$.
 
 If we have a mean of 1.234 g and a standard error of 0.006 g, we can report this as 1.234 (6) g.
+:::
 
 This method is particularly useful with values with units, or those with powers.
 
-* Secondly we can use the $\pm$ notation, where we report the mean, followed by the $\pm$ symbol, then the standard error. In this case the standard error should be reported with any prefixing zeros, or powers of 10 included.
+:::{.callout-caution title="Calculating the standard error from a sample standard deviation."}
+Secondly we can use the $\pm$ notation, where we report the mean, followed by the $\pm$ symbol, then the standard error. In this case the standard error should be reported with any prefixing zeros, or powers of 10 included.
 
 So if we have a mean of 101 and a standard error of 2, we can report this as 101 $\pm$ 2.
 
 If we have a mean of 3.2 $\times$ 10$^8$ s$^{-1}$ and a standard error of 0.5 $\times$ 10$^8$ s$^{-1}$, we can report this as 3.2 $\times$ 10$^8$ s$^{-1}$ $\pm$ 0.5 $\times$ 10$^8$ s$^{-1}$.
 
 If we have a mean of 1.234 g and a standard error of 0.006 g, we can report this as 1.234 g $\pm$ 0.006 g.
+:::
+
 
 This second method is less elegant (more to type) but also suffers from lack of clarity as it is also an acceptable way to report the mean and standard deviation. Consequently when data is reported in reference books it is more ususally reported using bracket notation, however it is important to be familiar with both methods.
 
@@ -186,3 +191,46 @@ This second method is less elegant (more to type) but also suffers from lack of 
 ```{=html}
 <iframe src="https://numbas.mathcentre.ac.uk/question/213899/adjusting-the-mean-to-match-the-standard-error/embed/" width=100% height="1450"></iframe>
 ```
+:::{.callout-caution title="Reporting a mean and standard error."}
+
+Previously we had the example where a mean was measured three times and was calculated to be 101.25, with a standard deviation of 2.54. We calculated the standard error to be 2, and adjusted the mean to match the precision of the standard error, giving us a mean of 101.
+
+A sample was measured 3 times and the mean was calculated to be 101.25, with a standard deviation of 2.54. Calculate the standard error and adjust the mean to match the precision of the standard error.
+
+Now we can report the mean and stanard eror together, first using bracket notation:
+
+101(2)
+
+or the $\pm$ notation:
+
+101 $\pm$ 2
+
+:::
+
+The example above is a very simple case which has no powers or units, and we can see that bracket notation becomes clearer (if we understand what it is saying) when powers and units  are involved.
+
+:::{.callout-caution title="Reporting a mean and standard error of a value with powers and units."}
+
+The kinetic rate constant of a second order reaction was measured 4 times and the mean was calculated to be 2.456 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$, with a standard deviation of 0.034 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$.
+
+Firstly we need to calculate the standard error from the sample standard deviation:
+
+$\sigma_{\bar{k}} = \frac{s}{\sqrt{n}}$
+$\sigma_{\bar{k}} = \frac{0.034}{\sqrt{4}} \times 10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+$\sigma_{\bar{k}} = 0.017 \times 10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+
+This should be reported to just one significant figure, and so we round up to 0.02 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$.
+
+The error now is just to two decimal places (if we keep the powers of 10 and units separate) and so we need to reduce the precision of our mean to match this. 
+
+This gives us a mean of $2.46 \times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$.
+
+Now we can report the mean and stanard eror together, first using bracket notation:
+
+$\sigma_{\bar{k}} = 2.46(2) \times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+
+Or using the $\pm$ notation:
+
+$\sigma_{\bar{k}} = 2.46 \times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$ $\pm$ 0.02 $\times$ $10^8$ mol$^{-1}$ dm$^3$ s$^{-1}$
+
+:::
