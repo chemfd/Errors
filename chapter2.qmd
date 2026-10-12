@@ -133,13 +133,13 @@ It is important to remember to include significant zeros if they are there. Thes
 Please remember you can refresh this question.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/210135/sig-figs-add-sub/embed/?token=504985f6-ad65-4e25-8415-4a61de7d9766" width=100% height="400"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/210135/sig-figs-add-sub/embed/?token=504985f6-ad65-4e25-8415-4a61de7d9766" width=100% height="400"></iframe>
 ```
 
 Question in context:
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/210791/calculate-molar-mass/embed/?token=6efdf064-52e6-48f7-bd63-af431e8140c2" width = 100% height = "760"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/210791/calculate-molar-mass/embed/?token=6efdf064-52e6-48f7-bd63-af431e8140c2" width = 100% height = "760"></iframe>
 ```
 
 ## Significant figures in multiplication and division {#sec-sfmuldiv}
@@ -250,7 +250,7 @@ When values are large some poeple want to write 4 060 000 (3sf) but given our ru
 Please remember you can refresh this question.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213408/significant-figures-multiplication-and-division/embed/?token=bce0a478-607e-4a2f-a0c0-55de9183b8b4" width=100% height="900"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213408/significant-figures-multiplication-and-division/embed/?token=bce0a478-607e-4a2f-a0c0-55de9183b8b4" width=100% height="900"></iframe>
 ```
 
 ## Significant figures in logarithms {#sec-sflog}
@@ -318,7 +318,7 @@ Our concentration may also be written as 5.59 $\times$ 10$^{-6}$, this value is 
 #### Self assessment question on significant figures with logarithms.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213410/significant-figures-logarithms/embed/?token=f6dbd410-d35d-4d0e-b3bf-9477bf8ec782" width=100% height="300"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213410/significant-figures-logarithms/embed/?token=f6dbd410-d35d-4d0e-b3bf-9477bf8ec782" width=100% height="300"></iframe>
 ```
 
 ## Significant figures in exponents, powers and roots. {#sec-sfpowers}
@@ -441,7 +441,7 @@ Note: curly brackets are used to denote activity, and square brackets are used t
 #### Self assessment question on significant figures with powers and exponents.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/212825/significant-figures-powers-and-exponents/embed/" width=100% height="1400"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/212825/significant-figures-powers-and-exponents/embed/" width=100% height="1400"></iframe>
 ```
 
 ## Significant figures in mixed calculations {#sec-sfmixed}
@@ -609,5 +609,5 @@ $E = E^0 - \frac{RT}{nF} \ln \frac{\{\text{products}\}}{\{\text{reactants}\}} = 
 #### Self assessment question on mixed calculations.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213855/significant-figures-mixed-calculations/embed/" width=100% height="1750"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213855/significant-figures-mixed-calculations/embed/" width=100% height="1750"></iframe>
 ```

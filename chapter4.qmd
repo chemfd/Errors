@@ -84,7 +84,7 @@ This might not *feel* right, but remember that the standard error is a measure o
 #### Self assessment question on calculating the standard error.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213898/standard-error/embed/" width=100% height="900"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213898/standard-error/embed/" width=100% height="900"></iframe>
 ```
 
 
@@ -189,7 +189,7 @@ This second method is less elegant (more to type) but also suffers from lack of 
 #### Self assessment question on adjusting precision using the standard error.
 
 ```{=html}
-<iframe src="https://numbas.mathcentre.ac.uk/question/213899/adjusting-the-mean-to-match-the-standard-error/embed/" width=100% height="1450"></iframe>
+<iframe loading="lazy" src="https://numbas.mathcentre.ac.uk/question/213899/adjusting-the-mean-to-match-the-standard-error/embed/" width=100% height="1450"></iframe>
 ```
 :::{.callout-caution title="Reporting a mean and standard error."}
 
